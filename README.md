@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**Запуск локально:**
+1) скопировать репозиторий
+2) установить зависимости npm install
+3) запустить проект npm run dev
+ 
+ **Правила оформления,  code-style :**
 
-## Getting Started
+App
+В папке app хранятся глобальные стили (пока пусто, наполним по необходимости) и страницы (например, 404 и Политика конфиденциальности)
 
-First, run the development server:
+Components 
+В папке components хранятся компоненты. 
+Каждый компонент расположен в отдельной папке. 
+Папки с компонентами называются с заглавной буквы в CamelCase. 
+Файл компонента называется index.jsx, файл со стилями - styles.module.scss 
+Компонент называется с заглавной буквы в CamelCase. Импорт стилей называется styles. 
+Импорт библиотеки classnames называется classNames. 
+Компонент экспортируется по умолчанию.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Images
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Изображения хранятся в папке public/images. Формат  - svg, форматы jpg/png следует переделать в формат webp ( нагуглить любой онлайн конвертор) для лучшей оптимизации приложения.
+Группы изображений одного компонента хранятся в отдельной папке с названием компонента со строчной буквы в сamelCase. 
+Изображения называются со строчной буквы в kebab-case.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Constants
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+В папке constants хранятся все константы проекта (пока не знаю, что там может быть, может, какие-то данные по которым будем делать map). 
+Для констант из компонента внутри папки constants создается отдельная папка с названием компонента(например constants/Header). 
+Внутри этой папки создается файл index.js в котором находятся сами константы.
+Константы называем в camelCase.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+**Далее приведены общие рекомендации по оформлению кода:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+; - каждое объявление заканчивается точкой с запятой
+↹ интервалы - каждый новый уровень вложенности отделяется табом
+{ шаблонные строки } - используются вместо сложного объединения строк
+‘ ’ - используются одинарные кавычки, вместо двойных
+пробелы - не ставятся пробелы в конце строк и в пустых строках
+‘++’ ‘- -’ - унарные операторы присоединяются к операндам без пробела (i++)
+, ; - перед запятой и точкой с запятой не ставятся пробелы
+: - перед двоеточием после имени свойства в определении объекта не ставятся пробелы
+? : - знаки в тернарном условном операторе отделяются пробелами с двух сторон
+{} () [] - в пустых конструкциях не ставятся заполняющие пробелы
+=== - используется строгая проверка на равенство (кроме проверки на равенство null)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+**Стили** 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Стили пишем с использованием препроцессора SCSS.
+Импорт стилей в компонентах называется styles.
+Глобальные CSS переменные хранятся в файле app/globals.scss (чуть позже заполним). 
+Файл дополняется по мере проработки макета и создания новых компонентов. 
+Для именования класов тэгов разметки используем методологию БЭМ , block__element_modificator
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Образец:
+
+![Getting Started](public/images/readme-screenshot.webp)
+
+**Ветки и GitHub**
+
+Наименование веток
+
+Название ветки должно называться с категории:
+feature - для создания и редактирования фич
+bugfix - для исправления багов
+После категории идет ‘/’ и краткое описание изменения в kebab-case.
+Например: feature/main-section, bugfix/change-file-names.
+
+Стадии такие: 
+1. Взяла задачу, подвинула на доске в колонку "Выполняется"
+2. Притянула ветку develop, ответивилась от нее, работаешь
+3. После выполнения коммитишь изменения, делаешь пулл реквест в develop(!!!)
+В reviewers можно тегнуть кого-то.
+В assignees отмечаешь себя. Двигаешь задачу в "На ревью"
+4. После аппрува хотя бы от одного из участников делаешь merge в develop + и если нет конфликтов.
+5. Закрываешь задачу, удаляешь ветку, перемещаешь задачу в "Готово"
+6. После закрытия пулла , пишем в Telegramm
+Это надо делать, так как ветка develop обновилась и все должны локально притянуть изменения, чтобы не было конфликтов.
+ 
+ В целом, перед каждым PR притягивайте develop и решайте конфликты ЛОКАЛЬНО, чтобы не было этой проблемы на этапе мерджа.

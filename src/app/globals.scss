@@ -1,0 +1,16 @@
+.html {
+  scrollbar-gutter: stable both-edges;
+}
+
+.body {
+  font-family: var(--involve-font);
+  background-color: var(--color-bg-black);
+  min-width: 320px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
