@@ -1,16 +1,12 @@
-.html {
-  scrollbar-gutter: stable both-edges;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .body {
-  font-family: var(--involve-font);
-  background-color: var(--color-bg-black);
   min-width: 320px;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  max-width: 1440px;
+  font-family: 'Montserrat';
 }
