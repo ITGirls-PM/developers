@@ -1,7 +1,6 @@
 import "./globals.scss";
 import Header from "@/components/Header";
 
-
 export const metadata = {
   title: "ExecutiveMentorWebpage",
   description: "Личная страница Георга",

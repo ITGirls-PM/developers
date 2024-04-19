@@ -1,10 +1,8 @@
-import Header from '../components/Header'
-
 
 export default function Home() {
   return (
     <main>
-      <Header/>
+      {/* Здесь должен находиться компонент, содержащий контент главной страницы */}
     </main>
   );
 }
