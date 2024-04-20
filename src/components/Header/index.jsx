@@ -24,11 +24,31 @@ export default function Header() {
         </ul>
           </nav>
         <div className={styles['header__icons']}>
-        <Image alt='telegram2Icon' src={telegramLogo} width={30} height={30}/>
-        <Image alt='linkedInIcon' src={linkedInLogo} width={30} height={30}/>
-        <Image alt='facebookIcon' src={facebookLogo} width={30} height={30}/>
-        <Image alt='setkaIcon' src={setkaLogo} width={30} height={30} style={{borderRadius: 20}} />
-        </div>
+        <a
+        href="https://t.me/remotellamas"
+        target="_blank"
+        aria-label="Telegram link">
+				<Image alt='telegram2Icon' src={telegramLogo} width={30} height={30}/>
+					</a>
+          <a
+        href="https://www.linkedin.com/in/egorkalambert/ "
+        target="_blank"
+        aria-label="LinkedIn link">
+				<Image alt='linkedInIcon' src={linkedInLogo} width={30} height={30}/>
+					</a>
+          <a
+        href="https://www.facebook.com/egorkalambert"
+        target="_blank"
+        aria-label="Facebook link">
+				<Image alt='facebookIcon' src={facebookLogo} width={30} height={30}/>
+					</a>
+          <a
+        href="https://setka.ru/accounts/4556 "
+        target="_blank"
+        aria-label="Setka link">
+				<Image alt='setkaIcon' src={setkaLogo} width={30} height={30} style={{borderRadius: 20}} />
+					</a>
+          </div>
         <div className={styles['header__buttons']}>
           <button>EN</button>
           <button>RU</button>

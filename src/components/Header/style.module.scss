@@ -97,11 +97,15 @@
 
         & > button  {
             background: none;
-            border: none;
+            border: solid 2px white;
             font-size: 20px;
             color: #000000;
             font-weight: 400;
             opacity: 0.5;
+            cursor: pointer;
+            &:hover {
+                border: solid 2px #7AC943;
+            }
         }
 
     }
