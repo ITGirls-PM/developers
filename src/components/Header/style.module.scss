@@ -71,9 +71,17 @@
         justify-content: center;
         margin-left: auto;
         gap:10px;
+        cursor: pointer;
+
+        &:last-of-type{
+            border-radius: 20px}
 
         @media screen and (max-width: 1075px) {
             margin-left: 0;
+        }
+
+        @media screen and (min-width: 1460px) {
+            margin-left: 20%;
         }
     }
     &__buttons {

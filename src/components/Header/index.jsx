@@ -6,6 +6,7 @@ import headerLogo from '../../../public/images/Header/header-logo.webp'
 import telegramLogo from '../../../public/images/Header/telegram-icon.svg'
 import linkedInLogo from '../../../public/images/Header/linkedin-icon.svg'
 import facebookLogo from '../../../public/images/Header/facebook-icon.svg'
+import setkaLogo from '../../../public/images/Header/setka-icon.svg'
 
 
 
@@ -26,6 +27,7 @@ export default function Header() {
         <Image alt='telegram2Icon' src={telegramLogo} width={30} height={30}/>
         <Image alt='linkedInIcon' src={linkedInLogo} width={30} height={30}/>
         <Image alt='facebookIcon' src={facebookLogo} width={30} height={30}/>
+        <Image alt='setkaIcon' src={setkaLogo} width={30} height={30} style={{borderRadius: 20}} />
         </div>
         <div className={styles['header__buttons']}>
           <button>EN</button>
