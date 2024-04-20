@@ -4,9 +4,7 @@ import { blogData } from '../../constants/blog/blogData.js';
 import ArticleBlog from '@/components/ArticleBlog/ArticleBlog';
 
 export default function Blog() {
-  {
-    console.log(blogData);
-  }
+
   return (
     <main className={style['blog']}>
       <h1 className={style['heading']}>Авторский блог</h1>
