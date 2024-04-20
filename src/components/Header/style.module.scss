@@ -1,10 +1,10 @@
 .header {
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: sticky;
     top: 0;
     background-color: white;
-    width: 100vw;
+    width: 100%;
     padding: 20px 40px;
     box-sizing: border-box;
     @media screen and (max-width: 1075px) {
