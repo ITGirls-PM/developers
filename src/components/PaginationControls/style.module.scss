@@ -1,0 +1,14 @@
+@import './../../../src/app/globals.scss';
+
+.pagination__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.pagination__button {
+  border: none;
+
+  background-color: $white;
+}

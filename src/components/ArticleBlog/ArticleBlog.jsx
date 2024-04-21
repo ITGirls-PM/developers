@@ -1,6 +1,17 @@
 import Image from 'next/image';
 import style from './style.module.scss';
 
+const formatedDate = (date) => {
+  const time = new Date(date);
+  const year = time.getFullYear();
+  const month = time.getMonth() + 1;
+  const day = time.getDate();
+  if (month < 10) return `${day}.0${month}.${year}`;
+  else {
+    return `${day}.${month}.${year}`;
+  }
+};
+
 const ArticleBlog = (props) => {
   return (
     <article className={style['blog__article']}>
@@ -13,7 +24,7 @@ const ArticleBlog = (props) => {
       />
       <div className={style['blog__info']}>
         <h2 className={style['blog__title']}>{props.title}</h2>
-        <span className={style['blog__time']}>{props.time}</span>
+        <span className={style['blog__time']}>{formatedDate(props.time)}</span>
         <p className={style['blog__text']}>{props.text}</p>
       </div>
     </article>
