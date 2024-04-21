@@ -12,7 +12,7 @@ export default function DescriptionPractice(props) {
   let text = props.text;
 
   const clicedNumber = () => {
-    let clicedText = 205;
+    let clicedText = 405;
     for (let i = 0; i < 20; i++) {
       if (props.text[clicedText + i] === ' ')
         return (clicedText = clicedText + i);
@@ -27,16 +27,22 @@ export default function DescriptionPractice(props) {
   }
 
   return (
-    <span className={style['practice__text']}>
+    <p className={style['practice__text']}>
       {firstPartText}
-      <span style={clicked ? { display: 'none' } : { display: 'inline' }}>
+      <p
+        className={style['practice__common-text']}
+        style={clicked ? { display: 'none' } : { display: 'inline' }}
+      >
         <bottom className={style['practice__bottom']} onClick={handleClicked}>
           ...
         </bottom>
-      </span>
-      <span style={clicked ? { display: 'inline' } : { display: 'none' }}>
+      </p>
+      <p
+        className={style['practice__common-text']}
+        style={clicked ? { display: 'inline' } : { display: 'none' }}
+      >
         {secondPartText}
-      </span>
-    </span>
+      </p>
+    </p>
   );
 }

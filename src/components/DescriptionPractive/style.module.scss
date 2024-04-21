@@ -4,6 +4,7 @@
   color: $black;
   line-height: 1.75;
   font-size: 18px;
+  text-indent: 25px;
   word-wrap: break-word;
 }
 .practice__bottom {
@@ -17,9 +18,13 @@
   text-decoration-color: $green;
   transition: height 0.3s ease, opacity 0.3s ease;
 }
+.practice__common-text {
+  white-space: pre-line;
+}
 @media (width< 640px) {
   .practice__text {
     line-height: 1.55;
     font-size: 16px;
+    margin: 0;
   }
 }

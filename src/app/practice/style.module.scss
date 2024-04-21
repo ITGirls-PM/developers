@@ -3,8 +3,8 @@
 .practice__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3vw;
-  width: 100vw;
+  gap: 5vw;
+  width: 100%;
   min-width: 320px;
   max-width: 1440px;
 }
@@ -18,7 +18,7 @@
   align-items: center;
   gap: 10vh;
   color: $black;
-  padding: 170px 40px 0px 40px;
+  padding: 80px 40px 0px 40px;
 }
 .heading {
   font-family: 'Montserrat', sans-serif;
@@ -50,4 +50,8 @@
   }
 }
 @media (width < 640px) {
+  .heading {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+  }
 }

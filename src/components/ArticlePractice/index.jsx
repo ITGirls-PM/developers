@@ -2,7 +2,7 @@ import Image from 'next/image';
 import style from './style.module.scss';
 import DescriptionPractice from '../DescriptionPractive';
 
-const PracticeBlog = (props) => {
+const ArticlePractice = (props) => {
   return (
     <article className={style['practice__article']}>
       <Image
@@ -19,4 +19,4 @@ const PracticeBlog = (props) => {
     </article>
   );
 };
-export default PracticeBlog;
+export default ArticlePractice;
