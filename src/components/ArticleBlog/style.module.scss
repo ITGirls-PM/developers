@@ -7,9 +7,11 @@
 .blog__article {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 3vw;
+  padding-left: 40px;
+  padding-right: 40px;
+  gap: 5vw;
 }
 .blog__info {
   max-width: 50%;
@@ -59,5 +61,11 @@
   .blog__text {
     line-height: 1.55;
     font-size: 16px;
+  }
+}
+
+@media (width>1100px) {
+  .blog__article {
+    justify-content: center;
   }
 }
