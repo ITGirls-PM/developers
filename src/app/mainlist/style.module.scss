@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    margin-inline-end: 5px;
   }
 
   &__title {
@@ -39,13 +40,16 @@
   &__list {
     font-weight: 300;
     color: $black;
-    font-size: 22px;
+    font-size: 18px;
+    line-height: 1.55;
+    font-style: normal;
     padding-inline-start: 24px;
   }
 
   &__image {
     height: auto;
     width: 50%;
+    margin-inline-start: 10px;
   }
 }
 
@@ -55,18 +59,22 @@
   &__image {
     border-radius: 50%;
     height: auto;
-    width: 65%;
+    width: 80%;
   }
 }
 
 .wrapper {
   width: 50%;
+  margin-inline-end: 22px;
+  padding: 0 83px;
 
   &__text {
     white-space: pre-line;
     font-weight: 300;
     color: $black;
     font-size: 22px;
+    line-height: 1.55;
+    font-style: normal;
     text-align: center;
   }
 }
