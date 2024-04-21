@@ -1,0 +1,72 @@
+@import '../globals.scss';
+
+.mainblock {
+  display: flex;
+  flex-direction: column;
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5vw;
+  }
+
+  &__keywords {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: $black;
+    font-size: 30px;
+    line-height: 1.23;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  &__title::before {
+    content: '';
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #66bb37;
+  }
+
+  &__list {
+    font-weight: 300;
+    color: $black;
+    font-size: 22px;
+    padding-inline-start: 24px;
+  }
+
+  &__image {
+    height: auto;
+    width: 50%;
+  }
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  &__image {
+    border-radius: 50%;
+    height: auto;
+    width: 65%;
+  }
+}
+
+.wrapper {
+  width: 50%;
+
+  &__text {
+    white-space: pre-line;
+    font-weight: 300;
+    color: $black;
+    font-size: 22px;
+    text-align: center;
+  }
+}
