@@ -17,6 +17,8 @@
         display: flex;
         flex-direction: row;
         gap: 150px;
+        overflow: hidden;
+        text-align: center;
 
         @media screen and (max-width: 1075px) {
           flex-direction: column;
@@ -28,12 +30,14 @@
     &__sectionTwo {
         height: 45vw;
         width: 117%;
+        max-width: 100vw;
+        max-height: 48vh;
         padding-top: 62px;
-        padding-left: 30px;
+        padding-left: 90px;
         background-image: url('/images/Services/treefull.webp');
-        overflow: scroll;
+        overflow: visible;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: 100% 90%;
         background-position: bottom 0px right 0px;
         font-family: 'Montserrat';
         font-size: 18px;
@@ -47,7 +51,6 @@
            font-size: 14px;
            margin-top: 5px;
           }
-
         }
 
         @media screen and (max-width: 756px) {
@@ -55,6 +58,13 @@
           font-size: 14px;
           height: 58vw;
           width: 143%;
+        }
+
+        @media screen and (max-width: 476px) {
+          background: none;
+          background-color: $green;
+          background-image: none;
+          
         }
         }
 
@@ -86,6 +96,8 @@
     }
 
     button[type="submit"] {
+      margin: auto;
+      margin-bottom: 10px;
       background-color: $green;
       color: $white;
       font-family: 'Montserrat';
@@ -105,7 +117,7 @@
 
     span {
       width: 70%;
-      margin-top: 20px;
+      margin: auto;
     }
 
 }
