@@ -1,0 +1,48 @@
+@import './../../../src/app/globals.scss';
+
+.practice__section-image {
+  height: auto;
+  width: 100%;
+}
+.practice__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5vw;
+}
+.practice__info {
+  max-width: 100%;
+}
+.practice__title {
+  color: $black;
+  font-size: 30px;
+  line-height: 1.23;
+  font-style: normal;
+  font-weight: 600;
+  margin: 2px;
+  padding-bottom: 2vw;
+}
+
+@media (width < 960px) {
+  .practice__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    max-width: 640px;
+    padding: 0;
+  }
+  .practice__section-image {
+    height: auto;
+    width: 100%;
+  }
+  .practice__info {
+    max-width: 100%;
+  }
+  .practice__title {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+  }
+}
