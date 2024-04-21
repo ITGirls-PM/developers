@@ -12,7 +12,7 @@ export default function DescriptionPractice(props) {
   let text = props.text;
 
   const clicedNumber = () => {
-    let clicedText = 105;
+    let clicedText = 205;
     for (let i = 0; i < 20; i++) {
       if (props.text[clicedText + i] === ' ')
         return (clicedText = clicedText + i);
