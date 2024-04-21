@@ -1,20 +1,20 @@
 @import './../../../src/app/globals.scss';
 
-.blog__section-image {
+.practice__section-image {
   height: auto;
-  width: 460px;
+  width: 100%;
 }
-.blog__article {
+.practice__article {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 1.5vw;
 }
-.blog__info {
-  max-width: 50%;
+.practice__info {
+  max-width: 100%;
 }
-.blog__title {
+.practice__title {
   color: $black;
   font-size: 30px;
   line-height: 1.23;
@@ -23,37 +23,26 @@
   margin: 2px;
   padding-bottom: 2vw;
 }
-.blog__text {
-  white-space: pre-line;
-  font-weight: 300;
-  color: $black;
-  line-height: 1.75;
-  font-size: 18px;
-}
+
 @media (width < 960px) {
-  .blog__article {
+  .practice__article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.5vw;
     max-width: 640px;
-    padding: 0 45px;
+    padding: 0;
   }
-  .blog__section-image {
+  .practice__section-image {
     height: auto;
     width: 100%;
   }
-  .blog__info {
+  .practice__info {
     max-width: 100%;
   }
-  .blog__title {
-    padding-bottom: 28px;
-  }
-}
-@media (width< 640px) {
-  .blog__text {
-    line-height: 1.55;
-    font-size: 16px;
+  .practice__title {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
   }
 }
