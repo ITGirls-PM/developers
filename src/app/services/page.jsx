@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import style from './style.module.scss'
 import Image from 'next/image'
 import shoppingLama from '../../../public/images/Services/lama-shopping.webp'
-import treeLama from '../../../public/images/Services/treefull.webp'
 
 export default function Services() {
     const [name, setName] = useState('');
@@ -29,7 +28,7 @@ export default function Services() {
           id="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Введите ваше имя"
+          placeholder="Ваше имя"
         />
       </div>
       <div>
@@ -39,7 +38,7 @@ export default function Services() {
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Введите ваш email"
+          placeholder="Электронный адрес"
         />
       </div>
       <div>
@@ -52,21 +51,21 @@ export default function Services() {
         />
       </div>
       <button type="submit">Отправить</button>
+      <span>✓нажимая на кнопку, вы соглашаетесь с <a>Политикой</a> обработки персональных данных</span>
     </form>
         </div>
         <div className={style['services__sectionTwo']}>
             <ul>
                 <li> Эффективность руководителя</li>
-                <li>HR трансформация</li>
+                <span>&#40;HR трансформация&#41;</span>
                 <li>Управление командой</li>
-                <li>HR процессы</li>
+                <span>&#40;HR процессы&#41;</span>
                 <li>Распределённая команда</li>
                 <li>Удалённая работа</li>
-                <li>HR метрики</li>
+                <span>&#40;HR метрики&#41;</span>
                 <li>Управление рисками</li>
                 <li>Нелинейное планирование</li>
             </ul>
-        <Image alt='logo' src={treeLama} width={650} height={350}/>
         </div>
     </div>
   )
