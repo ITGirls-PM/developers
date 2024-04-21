@@ -13,7 +13,7 @@ const ArticleBlog = (props) => {
       />
       <div className={style['blog__info']}>
         <h2 className={style['blog__title']}>{props.title}</h2>
-        <span className={style['blog__text']}>{props.text}</span>
+        <p className={style['blog__text']}>{props.text}</p>
       </div>
     </article>
   );
