@@ -28,7 +28,6 @@ export default function BlogPage() {
 
   useEffect(() => {
     setPaginatedPosts(paginate(items, currentPage, pageSize));
-    console.log(paginatedPosts);
   }, [currentPage]);
 
   return (

@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import styles from './style.module.scss';
 import Image from 'next/image';
@@ -7,8 +8,16 @@ import telegramLogo from '../../../public/images/Header/telegram-icon.svg';
 import linkedInLogo from '../../../public/images/Header/linkedin-icon.svg';
 import facebookLogo from '../../../public/images/Header/facebook-icon.svg';
 import setkaLogo from '../../../public/images/Header/setka-icon.svg';
+import { useTranslation } from 'react-i18next';
+import '../../18n';
 
 export default function Header() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <header className={styles['header']}>
       <Link href='/'>
@@ -17,19 +26,19 @@ export default function Header() {
       <nav>
         <ul className={styles['header__navbar']}>
           <li>
-            <Link href='/about'>ОБО МНЕ</Link>
+            <Link href='/about'>{t('header-about')}</Link>
           </li>
           <li>
-            <Link href='/services'>УСЛУГИ</Link>
+            <Link href='/services'>{t('header-services')}</Link>
           </li>
           <li>
-            <Link href='/practice'>ПРАКТИКА</Link>
+            <Link href='/practice'>{t('header-practice')}</Link>
           </li>
           <li>
-            <Link href='/blog'>БЛОГ</Link>
+            <Link href='/blog'>{t('header-blog')}</Link>
           </li>
           <li>
-            <Link href='/community'>КОМЬЮНИТИ</Link>
+            <Link href='/community'>{t('header-community')}</Link>
           </li>
         </ul>
       </nav>
@@ -75,8 +84,8 @@ export default function Header() {
         </a>
       </div>
       <div className={styles['header__buttons']}>
-        <button>EN</button>
-        <button>RU</button>
+        <button onClick={() => changeLanguage('en')}>EN</button>
+        <button onClick={() => changeLanguage('ru')}>RU</button>
       </div>
     </header>
   );
