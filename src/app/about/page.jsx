@@ -1,7 +1,10 @@
 import React from 'react'
 import style from './style.module.scss'
 import Meeting from '../../../public/images/About/meeting.webp'
+import Library from '../../../public/images/About/library.webp'
+import Coffee from '../../../public/images/About/coffee.webp'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function About() {
     return (
@@ -23,29 +26,50 @@ export default function About() {
                     </span>
                 </div>
 
-                <div>
-                    <span>
-                        
+                <div className={style['about__cards_cardCont']}>
+                    <span className={style['about__cards_img']}>
+                        <Image alt='meeting image' src={Library} width={470} height={340}/>
                     </span>
                     <span>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div className={style['about__cards_title']}>Практикующий ментор</div>
+                        <div className={style['about__cards_text']}>
+                            <ul>
+                                <li>HR CPO | Crowd</li>
+                                <li>Remote Employees Lifecycle | Yandex</li>
+                                <li>HR PO Lecturer | HR-kafedra</li>
+                                <li>Ex Yandex SMM-support & InterCom</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <input type="text" name="email" className={style['about__cards_email']} placeholder='Ваш email для рассылки'/>
+                            <button className={style['about__cards_btn']}>Подписаться</button>
+                        </div>
                     </span>
                 </div>
 
-                <div>
+                <div className={style['about__cards_cardCont']}>
                     <span>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div className={style['about__cards_title']}>Реальные результаты</div>
+                        <div className={style['about__cards_text']}>
+                        Делюсь тем, что:
+                            <ul>
+                                <li>работать вне офиса и стабильно — можно</li>
+                                <li>распределённая команда — это сложно, но эффективно</li>
+                                <li>самому выбирать где, когда и сколько работать — в кайф</li>
+                            </ul>
+                        </div>
+                        <div ><Link href="/practice"><button className={style['about__cards_btn']}>Смотреть кейсы</button></Link></div>
                     </span>
-                    <span>
-                        
+                    <span className={style['about__cards_img']}>
+                        <Image alt='meeting image' src={Coffee} width={470} height={340}/>
                     </span>
                 </div>
 
             </div>
         </div>
     )
+}
+
+function Email(){
+    console.log('ti smog')
 }
