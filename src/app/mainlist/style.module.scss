@@ -78,7 +78,8 @@
     object-fit: cover;
 
     @media screen and (max-width: 960px) {
-      width: 70%;
+      width: 100%;
+      margin-inline-start: 0;
     }
   }
 }
