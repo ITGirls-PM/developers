@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react';
 import style from './style.module.scss'
 import Meeting from '../../../public/images/About/meeting.webp'
 import Library from '../../../public/images/About/library.webp'
@@ -7,6 +8,26 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function About() {
+    const [email, setEmail] = useState('');
+    const [emailError, setEmailError] = useState('');
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      if (validateEmail(email)) {
+          console.log('Электронный адрес:', email);
+      }
+  };
+
+  const validateEmail = (value) => {
+      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!regex.test(value)) {
+          setEmailError('Введите корректный email');
+          return false;
+      } else {
+          setEmailError('');
+          return true;
+      }
+  };
     return (
         <div className={style['about']}>
             <div className={style['about__title']}>Георгий Ламберт</div>
@@ -41,8 +62,11 @@ export default function About() {
                             </ul>
                         </div>
                         <div>
-                            <input type="text" name="email" className={style['about__cards_email']} placeholder='Ваш email для рассылки'/>
-                            <button className={style['about__cards_btn']}>Подписаться</button>
+                            <input type="text" name="email" className={style['about__cards_email']} placeholder='Ваш email для рассылки' onChange={(e) => {setEmail(e.target.value);
+          validateEmail(e.target.value)}}/> 
+          <button className={style['about__cards_btn']} onClick={handleSubmit}>Подписаться</button>
+          {emailError && <div>{emailError}</div>}
+                           
                         </div>
                     </span>
                 </div>
