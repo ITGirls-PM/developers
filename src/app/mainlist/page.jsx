@@ -13,8 +13,6 @@ export default function MainList() {
             className={style['circle__image']}
             alt='georg-chair'
             src={Georgchair}
-            /* width={460}
-          height={306} */
           />
         </div>
         <div className={style['wrapper']}>
@@ -25,7 +23,7 @@ export default function MainList() {
           </p>
         </div>
       </div>
-      <div className={style['mainblock__box']}>
+      <div className={style['mainblock__key']}>
         <section className={style['mainblock__keywords']}>
           <h1 className={style['mainblock__title']}>Executive Mentor</h1>
           <ul className={style['mainblock__list']}>
@@ -45,8 +43,6 @@ export default function MainList() {
           className={style['mainblock__image']}
           alt='sea-main-list'
           src={SeaMainList}
-          /* width={460}
-          height={306} */
         />
       </div>
     </main>

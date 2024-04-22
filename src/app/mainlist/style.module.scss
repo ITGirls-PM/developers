@@ -4,12 +4,25 @@
   display: flex;
   flex-direction: column;
 
-  &__box {
+  &__box,
+  &__key {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 3.5vw;
+  }
+
+  &__box {
+    @media screen and (max-width: 756px) {
+      flex-direction: column;
+    }
+  }
+
+  &__key {
+    @media screen and (max-width: 960px) {
+      flex-direction: column;
+    }
   }
 
   &__keywords {
@@ -21,41 +34,67 @@
 
   &__title {
     color: $black;
-    font-size: 30px;
+    font-size: 42px;
     line-height: 1.23;
     font-style: normal;
     font-weight: 600;
+    position: relative;
+
+    @media screen and (max-width: 960px) {
+      font-size: 38px;
+    }
   }
 
   &__title::before {
     content: '';
-    /* position: absolute; */
+    position: absolute;
     left: 0;
     right: 0;
+    top: 63px;
     bottom: 0;
-    height: 2px;
+    width: 50px;
+    height: 3px;
     background-color: #66bb37;
   }
 
   &__list {
     font-weight: 300;
     color: $black;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.55;
     font-style: normal;
     padding-inline-start: 24px;
+
+    @media screen and (max-width: 960px) {
+      font-size: 18px;
+    }
   }
 
   &__image {
     height: auto;
     width: 50%;
-    margin-inline-start: 10px;
+    max-width: 100%;
+    margin-inline-start: 44px;
+    object-fit: cover;
+
+    @media screen and (max-width: 960px) {
+      width: 70%;
+    }
   }
 }
 
 .circle {
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 756px) {
+    justify-content: center;
+  }
+
+  @media (min-width: 756px) and (max-width: 960px) {
+    justify-content: flex-end;
+  }
+
   &__image {
     border-radius: 50%;
     height: auto;
@@ -76,5 +115,9 @@
     line-height: 1.55;
     font-style: normal;
     text-align: center;
+
+    @media screen and (max-width: 960px) {
+      font-size: 20px;
+    }
   }
 }
