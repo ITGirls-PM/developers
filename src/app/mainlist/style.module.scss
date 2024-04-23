@@ -1,0 +1,124 @@
+@import '../globals.scss';
+
+.mainblock {
+  display: flex;
+  flex-direction: column;
+
+  &__box,
+  &__key {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5vw;
+  }
+
+  &__box {
+    @media screen and (max-width: 756px) {
+      flex-direction: column;
+    }
+  }
+
+  &__key {
+    @media screen and (max-width: 960px) {
+      flex-direction: column;
+    }
+  }
+
+  &__keywords {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-inline-end: 5px;
+  }
+
+  &__title {
+    color: $black;
+    font-size: 42px;
+    line-height: 1.23;
+    font-style: normal;
+    font-weight: 600;
+    position: relative;
+
+    @media screen and (max-width: 960px) {
+      font-size: 38px;
+    }
+  }
+
+  &__title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 63px;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #66bb37;
+  }
+
+  &__list {
+    font-weight: 300;
+    color: $black;
+    font-size: 20px;
+    line-height: 1.55;
+    font-style: normal;
+    padding-inline-start: 24px;
+
+    @media screen and (max-width: 960px) {
+      font-size: 18px;
+    }
+  }
+
+  &__image {
+    height: auto;
+    width: 50%;
+    max-width: 100%;
+    margin-inline-start: 44px;
+    object-fit: cover;
+
+    @media screen and (max-width: 960px) {
+      width: 100%;
+      margin-inline-start: 0;
+    }
+  }
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 756px) {
+    justify-content: center;
+  }
+
+  @media (min-width: 756px) and (max-width: 960px) {
+    justify-content: flex-end;
+  }
+
+  &__image {
+    border-radius: 50%;
+    height: auto;
+    width: 80%;
+  }
+}
+
+.wrapper {
+  width: 50%;
+  margin-inline-end: 22px;
+  padding: 0 83px;
+
+  &__text {
+    white-space: pre-line;
+    font-weight: 300;
+    color: $black;
+    font-size: 22px;
+    line-height: 1.55;
+    font-style: normal;
+    text-align: center;
+
+    @media screen and (max-width: 960px) {
+      font-size: 20px;
+    }
+  }
+}
