@@ -6,7 +6,7 @@ import arrowRight from '../../../public/images/Blog/arrow-right.svg';
 import style from './style.module.scss';
 import { useEffect, useState } from 'react';
 import React from 'react';
-import { blogData } from '../../constants/blog/blogData.js';
+import { blogData, blogDataEn } from '../../constants/blog/blogData.js';
 
 const paginate = (items, pageNumber, pageSize) => {
   const startIndex = (pageNumber - 1) * pageSize;
@@ -14,7 +14,12 @@ const paginate = (items, pageNumber, pageSize) => {
 };
 
 export default function BlogPage() {
-  const items = blogData;
+  let items;
+  if (i18n === 'ru') {
+    items = blogData;
+  } else {
+    items = blogDataEn;
+  }
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 3;
   const handlePageChange = (page) => {

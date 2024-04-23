@@ -1,6 +1,6 @@
 import './globals.scss';
 import Header from '@/components/Header';
-import React from 'react';
+import React, { Suspense } from 'react';
 
 export const metadata = {
   title: 'ExecutiveMentorWebpage',
