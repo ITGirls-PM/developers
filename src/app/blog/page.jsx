@@ -2,7 +2,7 @@
 import React from 'react';
 import style from './style.module.scss';
 import BlogPage from '@/components/BlogPage/BlogPage';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import '../../18n';
 
 export default function Blog() {

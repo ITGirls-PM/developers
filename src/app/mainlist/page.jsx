@@ -1,10 +1,13 @@
-import React from 'react'
-import Image from 'next/image'
-import Georgchair from '../../../public/images/mainList/georgchair.webp'
-import SeaMainList from '../../../public/images/mainList/sea-main-list.webp'
-import style from './style.module.scss'
+'use client';
+import React from 'react';
+import Image from 'next/image';
+import Georgchair from '../../../public/images/mainList/georgchair.webp';
+import SeaMainList from '../../../public/images/mainList/sea-main-list.webp';
+import style from './style.module.scss';
+import { useTranslation } from 'next-i18next';
 
 export default function MainList() {
+  const { t } = useTranslation();
   return (
     <main className={style['mainblock']}>
       <div className={style['mainblock__box']}>
@@ -16,27 +19,19 @@ export default function MainList() {
           />
         </div>
         <div className={style['wrapper']}>
-          <p className={style['wrapper__text']}>
-            Привет! Рад видеть вас на моем сайте нескучного коучинга. Здесь вы
-            найдете полезную информацию по развитию своих профессиональных
-            навыков и площадку единомышленников, работающих на удаленке.
-          </p>
+          <p className={style['wrapper__text']}>{t('main-description')}</p>
         </div>
       </div>
       <div className={style['mainblock__key']}>
         <section className={style['mainblock__keywords']}>
           <h1 className={style['mainblock__title']}>Executive Mentor</h1>
           <ul className={style['mainblock__list']}>
-            <li className={style['mainblock__item']}>
-              Эффективность руководителя
-            </li>
-            <li className={style['mainblock__item']}>Управление командой</li>
-            <li className={style['mainblock__item']}>Распределённая команда</li>
-            <li className={style['mainblock__item']}>Удалённая работа</li>
-            <li className={style['mainblock__item']}>Управление рисками</li>
-            <li className={style['mainblock__item']}>
-              Нелинейное планирование
-            </li>
+            <li className={style['mainblock__item']}>{t('main-li-1')}</li>
+            <li className={style['mainblock__item']}>{t('main-li-2')}</li>
+            <li className={style['mainblock__item']}>{t('main-li-3')}</li>
+            <li className={style['mainblock__item']}>{t('main-li-4')}</li>
+            <li className={style['mainblock__item']}>{t('main-li-6')}</li>
+            <li className={style['mainblock__item']}>{t('main-li-6')}</li>
           </ul>
         </section>
         <Image
@@ -46,5 +41,5 @@ export default function MainList() {
         />
       </div>
     </main>
-  )
+  );
 }

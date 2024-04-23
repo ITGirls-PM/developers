@@ -78,4 +78,53 @@ const practiceData = [
   },
 ];
 
-export { practiceData };
+const practiceDataEn = [
+  {
+    id: 1,
+    image: '/images/practice/lama-reading.webp',
+    title: 'Perception of "good luck" at work',
+    text: `To finish the topic about "How lucky you are!" I will share how this helps me in managing the team. The beginning is in the previous post. 
+    What did you manage to get to? The perception of "luck" is a very important indicator of any professional's thinking. 
+    I'll explain. You can treat luck from several sides. 
+    
+    For example, as to the gatekeepers of fate, God's intention, coincidence of circumstances, or tribute for past good deeds. In the pritsnip, please, but there is zero productive component in this. All responsibility for such an event with such an attitude is shifted to fate, God, circumstances or karma. 
+    If we approach this issue with pragmatism, the perception of "luck" is a critical ability to assess the patterns that led to this luck. And what is it? And this is non—linear planning. We come to my professional field, where I feel confident and can explain with knowledge 🙂
+    Let's take the definition straight: "Nonlinear planning is a set of factors b`,
+  },
+  {
+    id: 2,
+    image: '/images/practice/lama-training.webp',
+    title: 'Self-manipulation',
+    text: `I suspect that those who were born in the post-Soviet space have at least once heard something like: "happiness loves silence," "don't jinx it," "shut up, you'll make more" and similar things. 
+    Yes, I won't hide it, I don't try to recite some things myself. It feels like sometimes it's because of the very "silence" that happiness loves so much. Collective trauma?
+   And at least once in your life, everyone has faced censure, public embarrassment, criticism or gossip about you that has reached you. If you are an individual who cannot remember something like that, you are either dead or you are not telling something🙂
+    Imagine what a mix inside of generational mental fear and personal experience? Brrr... ☹️
+   I'll tell you how I periodically use it for my own good. 
+    There is a type of case that I call "toad projects." This is something that you don't want to do, but you need to, and maybe you want to, but the conditions there are such that discourages any motivation and desire to continue.
+    That's exactly the kind of tasks I like`,
+  },
+  {
+    id: 3,
+    image: '/images/practice/lama-computer.webp',
+    title: 'A long way out of the holidays',
+    text: `Does it seem too late to talk about it? Well, what can I say, if you have already rebuilt and entered the working rhythm normally, just like this post and go on working — you are a smart girl 😊
+    And if you are me, who else is dumb like windows vista (are the olds here?) and even on the second full working week, it creaks by noon from the amount of information, you know: this is normal 🐾
+    Any break from the typical lifestyle and pace of life or work is stressful. Everyone's stress response is different. Getting out of stress is also different for everyone. 
+    Instead of moralizing from others and self-tormenting that you are stupid, you need to focus on those practices that will help you return the speed of information processing to the necessary for full-fledged work and feel better mentally and physically.
+    Again, I emphasize that everyone has an individual and there is no single recipe for how to do it for you. But it is definitely in my power to share the methods that help me.
+    1. I love making plans for the year.`,
+  },
+  {
+    id: 4,
+    image: '/images/practice/lama-graph.webp',
+    title: 'Work chats and fludilki: internal routine',
+    text: `1. General management work chat \n
+    The composition of the chat: I am 2. Since there are several levels of management in my team, a basic chat is needed where work issues are discussed. Inside, there are participants in all areas and subgroups who are responsible for managing their groups, projects and individual areas of work. The main chat, where work issues are resolved between any members of the entire team. Additional value — if necessary, you can discuss non-working activities or send a photo report from the corporate party to everyone at once 😁
+    2. Chat managers. 
+    This is a chat for me and my "directs" (employees directly subordinate). The chat is used for quick coordination on organizational issues, decision-making and discussion of cross-team issues. 
+    3. Chat of the structural team.
+    I get three such commands — chats too. The chat consists of the head of the group, his staff and me. Such a chat helps to take away from paragraph 1 the discussion of issues that need to be resolved only by the internal staff and the form`,
+  },
+];
+
+export { practiceData, practiceDataEn };

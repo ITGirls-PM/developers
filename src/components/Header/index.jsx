@@ -8,7 +8,8 @@ import telegramLogo from '../../../public/images/Header/telegram-icon.svg';
 import linkedInLogo from '../../../public/images/Header/linkedin-icon.svg';
 import facebookLogo from '../../../public/images/Header/facebook-icon.svg';
 import setkaLogo from '../../../public/images/Header/setka-icon.svg';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
+
 import '../../18n';
 
 export default function Header() {

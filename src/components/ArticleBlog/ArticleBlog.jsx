@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import style from './style.module.scss';
-import { useTranslation } from 'react-i18next';
 import '../../18n';
 
 const formatedDate = (date) => {
@@ -15,7 +14,6 @@ const formatedDate = (date) => {
 };
 
 const ArticleBlog = (props) => {
-  const { t } = useTranslation();
   return (
     <article className={style['blog__article']}>
       <Image

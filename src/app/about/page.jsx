@@ -6,7 +6,7 @@ import Library from '../../../public/images/About/library.webp';
 import Coffee from '../../../public/images/About/coffee.webp';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import '../../18n';
 
 export default function About() {

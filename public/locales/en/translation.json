@@ -4,6 +4,16 @@
   "header-practice": "PRACTICE",
   "header-blog": "BLOG",
   "header-community": "COMMUNITY",
+
+  "main-description": "Hi! I am glad to see you on my non-boring coaching website. Here you will find useful information on the development of your professional skills and a platform for like-minded people working remotely.",
+
+  "main-li-1": "Executive effectiveness",
+  "main-li-2": "Team Management",
+  "main-li-3": "Distributed Team",
+  "main-li-4": "Remote work",
+  "main-li-5": "Risk management",
+  "main-li-6": "Non-linear planning",
+
   "about-title": "Georgy Lambert",
   "about-subheading": "Professional mentor for managers and mid-level specialists",
   "about-description": "It so happened that I got involved in remote work even before the time when the word “remote work” itself became popular, and for several years now I have been creating comfortable conditions for the work of a distributed team and tens of thousands of remote workers",
@@ -25,9 +35,26 @@
   "about-cards-text-3-li-3": "choosing where, when and how much to work is a thrill",
   "about-button-3": "View cases",
 
-  "about": " тут текст!!!!",
-  "services": " тут текст!!!!",
-  "practice": " тут текст!!!!",
-  "blog-title": "Blog",
-  "community": " тут текст!!!!"
+  "practice-title": "Case studies from practice",
+
+  "services-title": "What can I do for you?",
+  "services-placeholder-name": "Your name",
+  "services-placeholder-email": "Email address",
+  "services-placeholder-message": "Enter your message",
+  "services-button": "Send",
+  "services-policy": "by clicking on the button, you agree to the Personal Data Processing Policy",
+  "services-li-1": "Executive Effectiveness ",
+  "services-li-1-1": "(HR transformation)",
+  "services-li-2": "Team Management ",
+  "services-li-2-1": "(HR processes)",
+  "services-li-3": "Distributed team",
+  "services-li-4": "Remote work ",
+  "services-li-4-1": "(HR metrics)",
+  "services-li-5": "Risk management",
+  "services-li-6": "Non-linear planning",
+
+  "not-found-title": "There is no such page.",
+  "not-found-button": "Go back to the main page",
+
+  "blog-title": "Blog"
 }

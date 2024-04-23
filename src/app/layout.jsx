@@ -1,5 +1,7 @@
 import './globals.scss';
 import Header from '@/components/Header';
+import { Suspense } from 'react';
+
 
 export const metadata = {
   title: 'George Lambert',
@@ -11,8 +13,10 @@ export default function RootLayout({ children }) {
     <html lang='ru' style={{ scrollBehavior: 'smooth' }} className='html'>
       <link rel='icon' href='/images/favicon.ico' sizes='any' />
       <body className='body'>
-        <Header />
-        {children}
+        <Suspense fallback={<div>Loading</div>}>
+          <Header />
+          {children}
+        </Suspense>
       </body>
     </html>
   );
