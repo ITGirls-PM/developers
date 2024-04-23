@@ -7,13 +7,14 @@
   text-indent: 25px;
   word-wrap: break-word;
 }
-.practice__bottom {
+.practice__button {
   cursor: pointer;
-
+  border: none;
+  background-color: #fff;
   text-decoration: none;
   transition: 0.3s ease;
 }
-.practice__bottom:hover {
+.practice__button:hover {
   text-decoration: underline;
   text-decoration-color: $green;
   transition: height 0.3s ease, opacity 0.3s ease;

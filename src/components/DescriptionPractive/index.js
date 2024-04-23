@@ -33,9 +33,9 @@ export default function DescriptionPractice(props) {
         className={style['practice__common-text']}
         style={clicked ? { display: 'none' } : { display: 'inline' }}
       >
-        <bottom className={style['practice__bottom']} onClick={handleClicked}>
+        <button className={style['practice__button']} onClick={handleClicked}>
           ...
-        </bottom>
+        </button>
       </span>
       <span
         className={style['practice__common-text']}

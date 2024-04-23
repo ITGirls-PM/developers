@@ -83,47 +83,73 @@ const practiceDataEn = [
     id: 1,
     image: '/images/practice/lama-reading.webp',
     title: 'Perception of "good luck" at work',
-    text: `To finish the topic about "How lucky you are!" I will share how this helps me in managing the team. The beginning is in the previous post. 
-    What did you manage to get to? The perception of "luck" is a very important indicator of any professional's thinking. 
-    I'll explain. You can treat luck from several sides. 
-    
-    For example, as to the gatekeepers of fate, God's intention, coincidence of circumstances, or tribute for past good deeds. In the pritsnip, please, but there is zero productive component in this. All responsibility for such an event with such an attitude is shifted to fate, God, circumstances or karma. 
-    If we approach this issue with pragmatism, the perception of "luck" is a critical ability to assess the patterns that led to this luck. And what is it? And this is non—linear planning. We come to my professional field, where I feel confident and can explain with knowledge 🙂
-    Let's take the definition straight: "Nonlinear planning is a set of factors b`,
+    text: `To wrap up the "How Lucky You Are!" theme, I'll share how it helps me in managing my team. It started in the previous post. 
+    What did it get to? The perception of "luck" is a very important indicator of any professional's mindset. 
+    Let me explain. Treating luck can be viewed from several angles. 
+    For example, as to the vagaries of fate, God's intention, coincidence or tribute for past good deeds. In principle - please, but there is no productive component in it. All responsibility for such an event is shifted to fate, God, circumstances or karma. 
+    If we approach this question with pragmatism, the perception of "luck" is a critical ability to evaluate the patterns that led to this luck. And what is that? And this is already - non-linear planning. Coming to my professional field, where I feel confident and can explain knowledgeably 🙂 .
+    Let's take the definition straight: "Nonlinear planning is a set of factors favorable for the accomplishment of a task". You can feel where I'm going, can't you? I won't belabor the point.
+    Nonlinear planning has three super-important components that are necessary for a professional to work effectively: 
+    1. The ability to see where opportunities are concentrated; 
+    2. The willingness to take a chance;
+    3. the ability to be in order.
+    By combining luck and non-linear planning, a special case study for interviewing candidates for my team came up in my practice. 
+    Sharing!!! I ask for a story about any life-changing event. And after the story, I ask a follow-up question: "What patterns led to it?". 
+  
+    There you go, now you can more easily work with me if you want to! 🙂 There's a catch - there is no right answer to this question. But there is a necessary reasoning for development on my team. In my interview experience, the question is a treasure trove`,
   },
   {
     id: 2,
     image: '/images/practice/lama-training.webp',
     title: 'Self-manipulation',
-    text: `I suspect that those who were born in the post-Soviet space have at least once heard something like: "happiness loves silence," "don't jinx it," "shut up, you'll make more" and similar things. 
-    Yes, I won't hide it, I don't try to recite some things myself. It feels like sometimes it's because of the very "silence" that happiness loves so much. Collective trauma?
-   And at least once in your life, everyone has faced censure, public embarrassment, criticism or gossip about you that has reached you. If you are an individual who cannot remember something like that, you are either dead or you are not telling something🙂
-    Imagine what a mix inside of generational mental fear and personal experience? Brrr... ☹️
-   I'll tell you how I periodically use it for my own good. 
-    There is a type of case that I call "toad projects." This is something that you don't want to do, but you need to, and maybe you want to, but the conditions there are such that discourages any motivation and desire to continue.
-    That's exactly the kind of tasks I like`,
+    text: `I suspect that those who were born in the post-Soviet space have at least once heard something like: "happiness loves silence", "don't jinx it", "shut up, you'll get jinxed" and the like. 
+    Yes, I won't hide it, I don't try to recite some things myself. I feel like sometimes it's because of the very "silence" that happiness loves so much. Collective trauma?
+    Also, at least once in your life, everyone has faced censure, public embarrassment, criticism, or gossip about yourself. If you're an individual who can't remember something like that, you're either dead or you're not telling us something🙂 .
+    Imagine the mix inside from generations of indoctrinated mental fear and personal experience? Brrrr..... ☹️
+    I'll tell you how I periodically use it to my advantage. 
+    There's a type of to-do that I call "toad projects." It's something that you don't want to do, but you have to, or maybe you want to, but the conditions are such that it discourages any motivation and desire to continue.
+    Public announcement as a tool of self-manipulation helps me with such tasks. If I feel that I can move out - I tell those whose censure will be painful for me, whose opinion has authority for me in the field of the issue. Or easier - I tell about it on social networks, there's a separate space there. 
+    And now, every time I want to move out of the business, I imagine having to explain to the people who matter to me why and how it happened, or simply realize how frustrating it can be for those who may have been inspired by my example on social media. And I have to go back!
+    For example, not too long ago I took on a project in teaching, realizing that the fervor might be gone, I told my social circle about it before it even happened. Three times I got nauseous in preparation because of the load, mood, wrong steps on my part. And yet, miracle - nobody jinxed it, the project came out! Which I am immensely satisfied with now 🥳
+    Let's get away from the professional sphere: for the last 12 years I've been dreaming about a tattoo project, which requires a lot of effort, money, time and brings an unrealistic amount of pain in the process of realization. Last time, almost 7 years ago, I couldn't follow through with it. You just can't imagine so much I hate the tattooing process! This time I periodically post progress on social media, some friends are frankly waiting for the final result. And here I can see the faces of my friends, if I'm going to lose now halfway.... Again and again I go patiently, slowly dragging the idea to the end. It's working again!    Lastly, I will share how the method can be strengthened: invest your personal money in the project. Then you with doubled strength will not go anywhere - you are watched by the reproachful looks of those you told, and they are helped by a toad gently wrapped around your neck in a stranglehold. Don't thank them! ❤️`,
   },
   {
     id: 3,
     image: '/images/practice/lama-computer.webp',
     title: 'A long way out of the holidays',
-    text: `Does it seem too late to talk about it? Well, what can I say, if you have already rebuilt and entered the working rhythm normally, just like this post and go on working — you are a smart girl 😊
-    And if you are me, who else is dumb like windows vista (are the olds here?) and even on the second full working week, it creaks by noon from the amount of information, you know: this is normal 🐾
-    Any break from the typical lifestyle and pace of life or work is stressful. Everyone's stress response is different. Getting out of stress is also different for everyone. 
-    Instead of moralizing from others and self-tormenting that you are stupid, you need to focus on those practices that will help you return the speed of information processing to the necessary for full-fledged work and feel better mentally and physically.
-    Again, I emphasize that everyone has an individual and there is no single recipe for how to do it for you. But it is definitely in my power to share the methods that help me.
-    1. I love making plans for the year.`,
+    text: `It seems like it's too late to talk about it now, doesn't it? Well what can I say, if you've already readjusted and got into a normal work rhythm, just put a like under this post and get on with your work - you're a good girl 😊
+    And if you're me, who is still dumb as windows vista (oldies here?) and even on my second full work week cringing by noon from the amount of information, know this: it's normal 🐾
+    Any break from the typical pattern and pace of life or work is stressful. Everyone's response to stress is different. Coping with stress is different for everyone too. 
+    Instead of lectures from others and self-torture that you are stupid, you need to focus on practices that will help you get your information processing speed back to the speed you need to function at full capacity and feel better mentally and physically.
+    Again, I emphasize, everyone is different and there is no one recipe for how to do this for you. But it is definitely within my power to share the methods that help me. 1. I love making plans for the year. Straight up with a to-do list, a main goal, divided by month. I do it all the time and, oh horror, I even follow them! The first thing to do is to make a plan where January and February are minimally achievable. Yes, there must be something that you move to this year, but in the format: January - lie in the right direction, February - begin to crawl, March - move on your hands and knees, and so on.
+    2. Pull everything you need to keep in your brain's RAM right now into a planner/daily planner/any task app. This is to make sure you don't miss everything you've planned in the moment while your brain is vulnerable and relaxed. And of course, to put lovely tick marks to what you have done 🙂 🙂
+    3. Rock that very relaxed brain. For example, learning a couple or three new words a day or disciplined daily reading a book (specifically a book: not work emails, not documents to sign, not shampoo labels (hi, Xusha!) - a book, paper or electronic). Ideally, not particularly relevant to your direct activity. The main thing here is not how much, but how. And how? Regularly! 4. Incorporate elements of physical activity so that your brain and your body are rocking along with your brain. If you're doing fitness, it's time to get back out, if the weather permits - go for a walk outside, and if not - turn on your favorite music and dance. Yes, yes, like there: as if no one sees you and blah, blah, blah. The main thing is to keep it light. Your body will not understand if you are a seal by nature, but decided to run a marathon in January. 
+    5. Socialize and keep in contact with others of the same "swing type". It will be very painful if everyone around you is only about "successful success", no amount of practicing will help. Now is the best time to socialize with your peers. 
+    In this, by the way, can help a lot our chat room lamp community of remote workers. Conditionally, if not to go into details, I will single out three types of states for the second working week of January:
+    - The proud cheetah, who didn't even notice the weekend (or there wasn't one) and is keeping up the pace like nothing happened.
+    - The confident alpaca, who has already come into her own and has recovered nicely from her olivier diet. 
+    - A calm capybara who is still dumb but now knows it's normal and she's not alone.`,
   },
   {
     id: 4,
     image: '/images/practice/lama-graph.webp',
     title: 'Work chats and fludilki: internal routine',
-    text: `1. General management work chat \n
-    The composition of the chat: I am 2. Since there are several levels of management in my team, a basic chat is needed where work issues are discussed. Inside, there are participants in all areas and subgroups who are responsible for managing their groups, projects and individual areas of work. The main chat, where work issues are resolved between any members of the entire team. Additional value — if necessary, you can discuss non-working activities or send a photo report from the corporate party to everyone at once 😁
-    2. Chat managers. 
-    This is a chat for me and my "directs" (employees directly subordinate). The chat is used for quick coordination on organizational issues, decision-making and discussion of cross-team issues. 
-    3. Chat of the structural team.
-    I get three such commands — chats too. The chat consists of the head of the group, his staff and me. Such a chat helps to take away from paragraph 1 the discussion of issues that need to be resolved only by the internal staff and the form`,
+    text: `1. general management working chat \n
+    Chat composition: me-2. Since there are several levels of management in my team, I need a main chat room where work issues are discussed. Inside, members of all areas and subgroups who are responsible for managing their groups, projects and individual work areas. A main chat room where work issues are resolved between any members of the entire team. Additional value - if necessary, you can discuss non-work activities or throw a photo report from a corporate event at once 😁
+    2. Executive Chat. 
+    This is a chat room for me and my "directs" (employees in direct report). The chat is used for quick coordination on organizational moments, decision making and discussing cross-team issues. 
+    3. chat of a structural team.
+    I have three such teams - chats too. The composition of the chat: the team leader, his staff and me. Such a chat helps to take away from item 1 the discussion of issues that need to be solved only by the internal team and a clear understanding of the team composition and the team's area of responsibility is formed. Important: the technician chat should be for technicians, the operations management chat should be for operations managers and that's it. All other participants are always available in p.1. 4. Chats of subject matter experts. 
+    We have content specialists, administrators, curators, support - all of them exist separately. The same principles from point 3 work. Additional value - any necessary participant can be added to such a chat, and he, in turn, can lock it before the call. Very convenient! ✨
+    5. General fludilka. 
+    The whole team from the chat rooms above needs to blow off steam, chat, share a picture of a cat or a cool meme. If you add a bot with horoscopes, jokes, memes and helpful commands - it becomes especially cozy.
+    6. A warehouse of useful stuff. 
+    We have a chat room called "Chest". Actually, it is used as a chest. Everything that is necessary to find at hand is stored there. 
+    7. Public channel.
+    We are an infrastructure. This means that we work for a large number of internal customers. It's important for us to communicate changes, news and plans in a timely and complete manner. A channel is one way to accomplish this task.  
+    I don't take into account internal specifics here: for example, our support has a chat with the best answers and a chat where we publish answers that we would like very much, but can't send 😉 
+    And of course, distributed implementers, a small army of 3000 employees, also divided into logical parts according to the projects in progress. 
+    Hope it was useful 🤗`,
   },
 ];
 

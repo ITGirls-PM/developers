@@ -2,7 +2,7 @@
 import Link from 'next/link';
 
 import style from './style.module.scss';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 export default function NotFound() {
   const { t } = useTranslation();
   return (

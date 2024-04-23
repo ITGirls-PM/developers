@@ -7,7 +7,7 @@ import style from './style.module.scss';
 import { useEffect, useState } from 'react';
 import React from 'react';
 import { blogData, blogDataEn } from '../../constants/blog/blogData.js';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 const paginate = (items, pageNumber, pageSize) => {
   const startIndex = (pageNumber - 1) * pageSize;
