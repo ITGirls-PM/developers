@@ -1,123 +1,121 @@
-@import '../globals.scss';
+@import "../globals.scss";
 
 .services {
+  &__heading {
+    color: $black;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
 
-    &__heading {
-        color: $black;
-        text-align: center;
-        font-size: 42px;
-        font-weight: 600;
-
-        @media screen and (max-width: 756px) {
-          font-size: 32px;
-        }
+    @media screen and (max-width: 756px) {
+      font-size: 32px;
     }
+  }
 
-    &__sectionOne {
-        display: flex;
-        flex-direction: row;
-        gap: 150px;
-        overflow: hidden;
-        text-align: center;
+  &__sectionOne {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    overflow: hidden;
+    text-align: center;
 
-        @media screen and (max-width: 1075px) {
-          flex-direction: column;
-          align-items: center;
-          gap: 40px;
-        }
-    }
-
-    &__sectionTwo {
-        height: 45vw;
-        width: 117%;
-        max-width: 100vw;
-        max-height: 48vh;
-        padding-top: 62px;
-        padding-left: 90px;
-        background-image: url('/images/Services/treefull.webp');
-        overflow: visible;
-        background-repeat: no-repeat;
-        background-size: 100% 90%;
-        background-position: bottom 0px right 0px;
-        font-family: 'Montserrat';
-        font-size: 18px;
-        & > ul > li {
-          padding-top: 0;
-          color: rgb(51, 51, 51);
-          font-size: 20px;
-          font-weight: 300;
-          margin-top: 15px;
-          @media screen and (max-width: 756px) {
-           font-size: 14px;
-           margin-top: 5px;
-          }
-        }
-
-        @media screen and (max-width: 756px) {
-          padding: 20px;
-          font-size: 14px;
-          height: 58vw;
-          width: 143%;
-        }
-
-        @media screen and (max-width: 476px) {
-          background: none;
-          background-color: $green;
-          background-image: none;
-          
-        }
-        }
-
-    form {
-      display: flex;
+    @media screen and (max-width: 1075px) {
       flex-direction: column;
-      margin: auto;
+      align-items: center;
+      gap: 40px;
+    }
+  }
 
+  &__sectionTwo {
+    height: 45vw;
+    width: 117%;
+    max-width: 100vw;
+    max-height: 48vh;
+    padding-top: 62px;
+    padding-left: 90px;
+    background-image: url("/images/Services/treefull.webp");
+    overflow: visible;
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-position: bottom 0px right 0px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    & > ul > li {
+      padding-top: 0;
+      color: rgb(51, 51, 51);
+      font-size: 20px;
+      font-weight: 300;
+      margin-top: 15px;
       @media screen and (max-width: 756px) {
-        padding: 20px;
+        font-size: 14px;
+        margin-top: 5px;
       }
     }
 
-    input,
-    textarea {
-      width: 70%;
-      font-family: 'Montserrat';
-      color: $black;
-      font-size: 16px;
-      border: none;
-      border-bottom: 1px solid #b3b3b3;
-      margin-bottom: 20px;
-      padding: 10px;
-      outline: none;
-
-      &:focus {
-        border-color: $green;
-      }
+    @media screen and (max-width: 756px) {
+      padding: 20px;
+      font-size: 14px;
+      height: 58vw;
+      width: 143%;
     }
 
-    button[type="submit"] {
-      margin: auto;
-      margin-bottom: 10px;
+    @media screen and (max-width: 476px) {
+      background: none;
       background-color: $green;
-      color: $white;
-      font-family: 'Montserrat';
-      font-size: 16px;
-      padding: 20px 60px;
-      max-width: 200px;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      outline: none;
-      transition: background-color 0.3s ease;
+      background-image: none;
     }
-  
-    button[type="submit"]:hover {
-      background-color: $black;
-    }
+  }
 
-    span {
-      width: 70%;
-      margin: auto;
-    }
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 
+    @media screen and (max-width: 756px) {
+      padding: 20px;
+    }
+  }
+
+  input,
+  textarea {
+    width: 70%;
+    font-family: "Montserrat";
+    color: $black;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #b3b3b3;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    resize: none;
+
+    &:focus {
+      border-color: $green;
+    }
+  }
+
+  button[type="submit"] {
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: $green;
+    color: $white;
+    font-family: "Montserrat";
+    font-size: 16px;
+    padding: 20px 60px;
+    max-width: 200px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+
+  button[type="submit"]:hover {
+    background-color: $black;
+  }
+
+  span {
+    width: 70%;
+    margin: auto;
+  }
 }
