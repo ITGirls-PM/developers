@@ -59,5 +59,11 @@
   "not-found-title": "There is no such page.",
   "not-found-button": "Go back to the main page",
 
-  "blog-title": "Blog"
+  "blog-title": "Blog",
+
+  "community-title": "Llamas at a distance",
+  "community-text": "I invite you to join our cozy community of remote experts and just good people, where we share useful experiences, exchange news and support each other on an exciting path of self-development",
+  "community-button": "I want to see you!",
+
+  "policy-title": "Privacy policy"
 }

@@ -4,6 +4,7 @@ import style from './style.module.scss';
 import Image from 'next/image';
 import shoppingLama from '../../../public/images/Services/lama-shopping.webp';
 import { useTranslation } from 'react-i18next';
+import Link from 'next/link';
 
 export default function Services() {
   const { t } = useTranslation();
@@ -92,11 +93,8 @@ export default function Services() {
           </div>
           <button type="submit">{t('services-button')}</button>
           <span>
-            ✓
-            <a>
-              {t('services-policy')}
-              {t('services-policy-a')}
-            </a>
+            ✓{t('services-policy')}
+            <Link href="/privacy-policy">{t('services-policy-a')}</Link>
           </span>
         </form>
       </div>
