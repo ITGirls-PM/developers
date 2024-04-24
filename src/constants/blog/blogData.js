@@ -80,11 +80,12 @@ const blogDataEn = [
     image: '/images/Blog/employmentbook.webp',
     time: '2024-01-24',
     title: 'About organizing workshops and team meetings',
-    text: `Congratulations, you have a huge advantage — you do not need to run from meeting room to meeting room. However, there is also a difficulty — you need to be able to remind yourself in time or find a way to connect to the meeting yourself. Again, you can find many reasons to do without meetings in the office, but we work remotely - meetings are mandatory. Not everything, it's like with chats:
-    1. Face-to-face meetings with each member of your team (read: 121, 1to1, sync, name1|name2, 1/1 and a dozen more variations), where a person has YOUR allotted time, which HE can spend the way he needs;
-    2. the general regular schedule of the team, where you can bring the most important news, make a cut on work tasks, share personal achievements and look into each other's eyes (which is important!!);
-    3. The so-called keynote meeting, or key meeting, where you and those responsible for your team's demonstration projects make a cut: what we have done, what we are doing, what we will do.
-    The optimal frequency is a week. Go on`,
+    text: `Congratulations, you have a huge advantage - you do not need to run from the meeting room to the meeting room. True, there is also a difficulty - you need to be able to remind yourself of yourself in time or find a way to connect to the meeting yourself. Again, in the office you can find many reasons to do without meetings, but we work remotely - call-in meetings are required. Not all, here as with chats:
+    1. face-to-face meetings with each member of your team (read: 121, 1to1, sync, name1 | name2, 1/1 and a dozen more variations), where a person has YOUR allocated time that HE can spend as he needs;
+    2. general regular season of the team, where you can convey the most important news, make a cut on work tasks, share personal achievements and look each other in the eye (which is important!!);
+    3. the so-called keynote meeting, or key fly, where you and those responsible for the demonstration projects of your team make a cut: what you have done, what we are doing, what we will do. The optimal frequency is a week. The duration of any of the meetings described above is half an hour. More cooling, less - do not overestimate yourself ‍ ️
+    I will add another meeting "under the asterisk":
+    4*. non-meeting meeting, where you will do anything with the team except work. We, for example, in the user support team in social networks arrange a joint game "Brainstorm of Answers," where the presenter prepares tricky cases of users from social networks, and everyone in a crazy rush fights over answers that we will never send for anything. `,
   },
   {
     id: 3,
@@ -93,8 +94,8 @@ const blogDataEn = [
     title: `I don't like working with geniuses`,
     text: `That's it. I want to share an observation with you 😶
     Explanatory team: in my understanding, a "genius" at work is a person who can gracefully solve a problem that the entire department has been working on for a week. In general, an employee who in his field has the talent to solve unsolvable problems, come up with new concepts, be productive most of the time, etc. Imagine a brilliant musician or actor in the midst of the process. Here is something similar, only in management, accounting or development, for example.
-    And of course there is a downside to this. Working in a team with such colleagues is often unbearable. Today there is an impulse to create, tomorrow there is not. Today the concept is A, tomorrow it is B, and by the evening the day after tomorrow it is already B. Often, when it is necessary to just take it and do it, you begin to delve into details or twist it to the required level of genius (it is unclear to whom the required one is, but you twist–twist-twist).
-   I had experience as a leader in the "ge" psychotype`,
+    And of course there is a downside to this. Working in a team with such colleagues is often unbearable. Today there is an impulse to create, tomorrow there is not. Today the concept is A, tomorrow it is B, and by the evening the day after tomorrow it is already B. Often, when it is necessary to just take it and do it, you begin to delve into details or twist it to the required level of genius (it is unclear to whom the required one is, but you twist–twist-twist).I had experience as a leader in the psychotype of "genius" and subordinates. Both are interesting, with an additional cost of resource for management, if it is a subordinate, or reinsurance, if it is a leader. As my experience personally shows, it would be perfectly possible to do without it.
+    Now I understand that the required level of "genius" in the team can also be supported by employees of a different psychotype, which is infinitely happy! It turns out that the absence of Don Quixote's model of behavior in the team does not supplant breakthrough projects, new concepts and creativity, and the deadlines are observed better, the mental state is more balanced, and projects can be released in an MVP state. All other things being equal, as a manager, I will choose a different type of employee for my team.`,
   },
   {
     id: 4,
@@ -112,12 +113,13 @@ const blogDataEn = [
     id: 5,
     image: '/images/Blog/employmentbook.webp',
     time: '2024-01-27',
-    title: 'About organizing workshops and team meetings',
-    text: `Congratulations, you have a huge advantage — you do not need to run from meeting room to meeting room. However, there is also a difficulty — you need to be able to remind yourself in time or find a way to connect to the meeting yourself. Again, you can find many reasons to do without meetings in the office, but we work remotely - meetings are mandatory. Not everything, it's like with chats:
-    1. Face-to-face meetings with each member of your team (read: 121, 1to1, sync, name1|name2, 1/1 and a dozen more variations), where a person has YOUR allotted time, which HE can spend the way he needs;
-    2. the general regular schedule of the team, where you can bring the most important news, make a cut on work tasks, share personal achievements and look into each other's eyes (which is important!!);
-    3. The so-called keynote meeting, or key meeting, where you and those responsible for your team's demonstration projects make a cut: what we have done, what we are doing, what we will do.
-    The optimal frequency is a week. Go on`,
+    title: 'About the organization of team communication',
+    text: `The most important and basic thing in a distributed team is communication. The main criterion: it should be there. In the case of an office, you have a coffee point, a hallway, an open space or, eventually, a queue for the bathroom. In the case of a distributed team, your weapon is a chat. Or better yet, a few:
+    1. A working chat where issues are discussed, tasks are set, and a sync on current projects;
+     2. project chats, where for each specific large-scale project you have your own 'schedule' and, most importantly, a specific composition of participants;
+     3. news chat, where there is only news, and in general, the best news chat is a channel;
+     4. A warehouse where you save the brightest moments from your work or correspondence from the chat, which suits whom;
+     5. fludilka. We definitely have to tell each other what kind of cosmetics is trending again, where to rent a house, to be lucky with an apartment in Tae, or how to survive with blue hair in a settlement.`,
   },
 ];
 
