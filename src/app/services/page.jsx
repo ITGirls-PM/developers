@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import style from './style.module.scss'
 import Image from 'next/image'
+import Link from 'next/link';
 import shoppingLama from '../../../public/images/Services/lama-shopping.webp'
 
 export default function Services() {
@@ -10,9 +11,15 @@ export default function Services() {
     const [message, setMessage] = useState('');
     const [nameError, setNameError] = useState('');
     const [emailError, setEmailError] = useState('');
+    const [isChecked, setIsChecked] = useState(false);
+    const [consentError, setConsentError] = useState('');
   
     const handleSubmit = (e) => {
       e.preventDefault();
+      if (!isChecked) {
+        setConsentError('Необходимо согласие!');
+        return;
+    }
       if (validateName(name) && validateEmail(email)) {
           console.log('Ваше имя:', name);
           console.log('Электронный адрес:', email);
@@ -56,6 +63,7 @@ export default function Services() {
           onChange={(e) => {setName(e.target.value);
           validateName(e.target.value)}}
           placeholder="Ваше имя"
+          required
         />
       </div>
       {nameError && <span style={{ fontSize: 12, color: 'green' }}>{nameError}</span>}
@@ -68,9 +76,10 @@ export default function Services() {
           onChange={(e) => {setEmail(e.target.value);
           validateEmail(e.target.value)}}
           placeholder="Электронный адрес"
+          required
         />
       </div>
-      {emailError && <span>{emailError}</span>}
+      {emailError && <span style={{ fontSize: 12, color: 'green' }}>{emailError}</span>}
       <div>
         <label htmlFor="message"></label>
         <textarea
@@ -81,7 +90,13 @@ export default function Services() {
         />
       </div>
       <button type="submit">Отправить</button>
-      <span>✓нажимая на кнопку, вы соглашаетесь с <a>Политикой</a> обработки персональных данных</span>
+      {consentError && <span style={{ fontSize: 12, color: 'green' }}>{consentError}</span>} 
+      <div>
+    <input type="checkbox" id="agree" name="agree" style={{ width: 'auto', margin: 5 }} checked={isChecked}
+    onChange={() => setIsChecked(!isChecked)}/>
+    <label for="agree">нажимая на кнопку, вы соглашаетесь с 
+        <Link href="/privacy-policy"> Политикой</Link> обработки персональных данных</label>
+  </div>
     </form>
         </div>
         <div className={style['services__sectionTwo']}>
