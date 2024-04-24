@@ -7,11 +7,14 @@
     width: 100%;
     padding: 20px 40px;
     box-sizing: border-box;
-    @media screen and (max-width: 1075px) {
+    @media screen and (max-width: 838px) {
         flex-direction: column;
         align-items: center;
         text-align: center;
         position:relative;
+    }
+    @media screen and (max-width: 1175px) {
+        
     }
 
 
@@ -26,9 +29,15 @@
         padding: 0;
         margin: 25px;
 
-        @media screen and (max-width: 1075px) {
+        @media screen and (max-width: 838px) {
             flex-direction: column;
             gap: 20px;
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 1175px) {
+            font-size: 15px;
+            gap: 25px;
         }
 
         & > li > a {
@@ -76,7 +85,7 @@
         &:last-of-type{
             border-radius: 20px}
 
-        @media screen and (max-width: 1075px) {
+        @media screen and (max-width: 1175px) {
             margin-left: 0;
         }
 
@@ -86,13 +95,12 @@
     }
     &__buttons {
         display: flex;
-        align-self: center;
+        align-items: center;
         justify-content: center;
         margin-left: 30px;
 
-        @media screen and (max-width: 1075px) {
-            margin-left: 0;
-            margin-top: 20px;
+        @media screen and (max-width: 1175px) {
+            margin-left: 20px;
         }
 
         & > button  {
@@ -105,6 +113,9 @@
             cursor: pointer;
             &:hover {
                 border: solid 2px #7AC943;
+            }
+            @media screen and (max-width: 1175px) {
+                font-size: 15px;
             }
         }
 

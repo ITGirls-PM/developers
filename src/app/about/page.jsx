@@ -16,17 +16,24 @@ export default function About() {
       if (validateEmail(email)) {
           console.log('Электронный адрес:', email);
       }
+      
   };
 
   const validateEmail = (value) => {
       const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!regex.test(value)) {
-          setEmailError('Введите корректный email');
+      if(value == ''){
+        setEmailError('Заполните это поле');
           return false;
+      }
+      else if (!regex.test(value)) {
+        setEmailError('');
+        setEmailError('Введите корректный email');
+        return false;
       } else {
           setEmailError('');
           return true;
       }
+      
   };
     return (
         <div className={style['about']}>
@@ -40,7 +47,15 @@ export default function About() {
                     <span>
                         <div className={style['about__cards_title']}>Нестандартный подход</div>
                         <div className={style['about__cards_text']}>Здесь мы пропишем все конкурентные преимущества, отличающие автора от других менторов</div>
-                        <div ><button className={style['about__cards_btn']}>Читать на канале</button></div>
+                        <div >
+                            <Link
+                            href='https://t.me/remotellamascom'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            aria-label='Telegram link'>
+                            <button className={style['about__cards_btn']}>Читать на канале</button>
+                            </Link>
+                        </div>
                     </span>
                     <span className={style['about__cards_img']}>
                         <Image alt='meeting image' src={Meeting} width={470} height={340}/>
@@ -62,11 +77,16 @@ export default function About() {
                             </ul>
                         </div>
                         <div>
-                            <input type="text" name="email" className={style['about__cards_email']} placeholder='Ваш email для рассылки' onChange={(e) => {setEmail(e.target.value);
-          validateEmail(e.target.value)}}/> 
-          <button className={style['about__cards_btn']} onClick={handleSubmit}>Подписаться</button>
-          {emailError && <div>{emailError}</div>}
-                           
+                            <input 
+                            type="text" 
+                            name="email" 
+                            className={style['about__cards_email']} 
+                            placeholder='Ваш email для рассылки' 
+                            required
+                            onChange={(e) => {setEmail(e.target.value);
+                            validateEmail(e.target.value)}}/> 
+                            <button className={style['about__cards_btn']} onClick={handleSubmit}>Подписаться</button>
+                            {emailError && <div style={{ fontSize: 12, color: 'green' }}>{emailError}</div>} 
                         </div>
                     </span>
                 </div>
