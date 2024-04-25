@@ -1,4 +1,4 @@
-@import '../globals.scss';
+@import '../text-styles';
 
 .community {
   display: flex;
@@ -6,11 +6,8 @@
   align-items: center;
 
   &__heading {
-    color: $black;
-    font-size: 34px;
-    line-height: 1.23;
-    font-style: normal;
-    font-weight: 600;
+    margin-top: 0px;
+    @extend %heading-font;
     margin-bottom: 60px;
 
     @media screen and (max-width: 1075px) {
@@ -42,33 +39,22 @@
   }
 
   &__text {
-    color: $black;
-    white-space: pre-line;
-    font-size: 18px;
-    line-height: 1.55;
-    font-style: normal;
-    font-weight: 300;
-    text-align: center;
+    @extend %text-medium-font;
   }
 
   &__btn {
     margin-top: 15px;
     margin-bottom: 50px;
-    color: $white;
-    background-color: $green;
-    font-size: 14px;
-    line-height: 1.55;
-    font-weight: 700;
-    text-align: center;
+    background-color: var(--green);
     border: none;
     height: 45px;
     padding: 0 30px;
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
+    @extend %button-font;
     &:hover {
-      background-color: $black;
+      background-color: var(--black);
     }
   }
 }

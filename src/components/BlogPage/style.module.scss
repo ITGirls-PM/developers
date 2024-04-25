@@ -1,4 +1,4 @@
-@import './../../../src/app/globals.scss';
+@import './../../../src/app/text-styles.scss';
 
 .pagination__container {
   display: flex;
@@ -9,7 +9,7 @@
 }
 .pagination__button {
   border: none;
-  background-color: $white;
+  background-color: var(--white);
   &:hover {
     opacity: 20%;
   }
@@ -19,8 +19,5 @@
 }
 
 .pagination__text {
-  font-weight: 300;
-  color: $black;
-  line-height: 1.75;
-  font-size: 18px;
+  @extend %pagination-font;
 }

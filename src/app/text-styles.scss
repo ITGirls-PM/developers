@@ -1,0 +1,67 @@
+// text styles
+%header__navbar-font {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+%heading-font {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 2vw;
+}
+
+%subtitle-font {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black);
+  font-size: 24px;
+  line-height: 1.35;
+  font-style: normal;
+  font-weight: 600;
+}
+
+%text-font {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black);
+  font-size: 14px;
+  line-height: 1.55;
+  font-style: normal;
+  font-weight: 300;
+}
+
+%text-medium-font {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+%button-font {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 1.55;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+
+%pagination-font {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black);
+  font-size: 18px;
+  line-height: 1.55;
+  font-style: normal;
+  font-weight: 300;
+}
