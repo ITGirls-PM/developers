@@ -17,7 +17,7 @@ export async function POST(request) {
         })
 
         const mailOption = {
-            from: 'komarenko.daria@yandex.ru',
+            from: 'dariastore@yandex.ru',
             to: 'ignateva-darya@mail.ru',
             subject: "Заявка",
             html: `
@@ -28,7 +28,7 @@ export async function POST(request) {
         `
         }
 
-        await transporter.sendMail(mailOption)
+        transporter.sendMail(mailOption)
 
         return NextResponse.json({ message: "Email Sent Successfully" }, { status: 200 })
     } catch (error) {

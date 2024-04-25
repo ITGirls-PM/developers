@@ -18,7 +18,7 @@ export default function Services() {
 
   const sendMail = async () => {
     try {
-      const response = await fetch('/api/sendEmail', {
+      const response = await fetch('/api/sendMail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
