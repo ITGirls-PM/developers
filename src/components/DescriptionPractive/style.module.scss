@@ -6,15 +6,18 @@
   word-wrap: break-word;
 }
 .practice__button {
+  @extend %text-font;
   cursor: pointer;
   border: none;
   background-color: #fff;
   text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--green);
   transition: 0.3s ease;
 }
 .practice__button:hover {
   text-decoration: underline;
-  text-decoration-color: var(--green);
+  text-decoration-color: var(--black);
   transition: height 0.3s ease, opacity 0.3s ease;
 }
 .practice__common-text {

@@ -1,13 +1,19 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import style from './style.module.scss';
 import Image from 'next/image';
 import shoppingLama from '../../../public/images/Services/lama-shopping.webp';
-import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
+import ArticleServices from '@/components/ArticleServices';
+import {
+  serviceData,
+  serviceDataEn,
+} from '../../constants/service/serviceData.js';
+import { useTranslation } from 'next-i18next';
+import '../../18n';
 
 export default function Services() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -15,12 +21,19 @@ export default function Services() {
   const [emailError, setEmailError] = useState('');
   const [isChecked, setIsChecked] = useState(false);
   const [consentError, setConsentError] = useState('');
+  const [activeArticles, setActiveArticles] = useState([
+    false,
+    false,
+    false,
+    false,
+    false,
+  ]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(!isChecked){
+    if (!isChecked) {
       setConsentError(t('services-error-consent'));
-      return
+      return;
     }
     if (validateName(name) && validateEmail(email)) {
       console.log('Ваше имя:', name);
@@ -50,6 +63,36 @@ export default function Services() {
       return true;
     }
   };
+
+  let data;
+  useEffect(() => {
+    if (i18n.language === 'ru') {
+      data = serviceData;
+    } else {
+      data = serviceDataEn;
+    }
+  }, [i18n.language]);
+
+  if (i18n.language === 'ru') {
+    data = serviceData;
+  } else {
+    data = serviceDataEn;
+  }
+
+  const handleChange = (id) => {
+    let newArray = [...activeArticles];
+    for (let i = 0; i < activeArticles.length; i++) {
+      if (id !== i + 1) {
+        newArray[i] = false;
+      }
+
+      if (+id === i + 1) {
+        newArray[i] = true;
+      }
+    }
+    setActiveArticles(newArray);
+  };
+
   return (
     <div className={style['services']}>
       <h2 className={style['services__heading']}>{t('services-title')}</h2>
@@ -99,28 +142,39 @@ export default function Services() {
           </div>
           <button type="submit">{t('services-button')}</button>
           {consentError && (
-          <span style={{ fontSize: 12, color: 'green' }}>{consentError}</span>)} 
+            <span style={{ fontSize: 12, color: 'green' }}>{consentError}</span>
+          )}
           <div>
-            <input type="checkbox" id="agree" name="agree" style={{ width: 'auto', margin: 5 }} checked={isChecked}
-            onChange={() => setIsChecked(!isChecked)}/>
-            <label for="agree">{t('services-policy')} 
-            <Link href="/privacy-policy"> {t('services-policy-a')}</Link></label>
-            </div>
+            <input
+              type="checkbox"
+              id="agree"
+              name="agree"
+              style={{ width: 'auto', margin: 5 }}
+              checked={isChecked}
+              onChange={() => setIsChecked(!isChecked)}
+            />
+            <label for="agree">
+              {t('services-policy')}
+              <Link href="/privacy-policy"> {t('services-policy-a')}</Link>
+            </label>
+          </div>
         </form>
       </div>
-      <div className={style['services__sectionTwo']}>
-        <ul>
-          <li> {t('services-li-1')}</li>
-          <span>&#40;{t('services-li-1-1')}&#41;</span>
-          <li>{t('services-li-2')}</li>
-          <span>&#40;{t('services-li-2-1')}&#41;</span>
-          <li>{t('services-li-3')}</li>
-          <li>{t('services-li-4')}</li>
-          <span>&#40;{t('services-li-4-1')}&#41;</span>
-          <li>{t('services-li-5')}</li>
-          <li>{t('services-li-6')}</li>
-        </ul>
-      </div>
+      <ul>
+        {data.map((item) => {
+          return (
+            <ArticleServices
+              handleChange={() => {
+                handleChange(item.id);
+              }}
+              active={activeArticles[item.id - 1]}
+              {...item}
+              key={item.id}
+            />
+          );
+        })}
+      </ul>
+      <div className={style['services__sectionTwo']}></div>
     </div>
   );
 }

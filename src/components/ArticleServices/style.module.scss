@@ -1,0 +1,43 @@
+@import './../../../src/app/text-styles.scss';
+
+.services__text {
+  @extend %text-font;
+  text-indent: 15px;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+.services__title {
+  @extend %subtitle-font;
+}
+.services__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 40px 0px 0px;
+  margin-top: 15px;
+  @media screen and (max-width: 756px) {
+    margin-top: 5px;
+  }
+}
+.services__button {
+  margin: auto;
+  background-color: var(--green);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+  @extend %button-font;
+  font-size: 12px;
+}
+.services__subtitle {
+  @extend %text-medium-font;
+
+  margin-bottom: 10px;
+}
+
+.services__button:hover {
+  background-color: var(--black);
+}
