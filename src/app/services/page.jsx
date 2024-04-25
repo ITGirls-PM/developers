@@ -16,6 +16,25 @@ export default function Services() {
   const [isChecked, setIsChecked] = useState(false);
   const [consentError, setConsentError] = useState('');
 
+  const sendMail = async () => {
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message
+        })
+      });
+      console.log(await response.json());
+    } catch (error) {
+      console.error('Failed to send email:', error);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if(!isChecked){
@@ -26,6 +45,7 @@ export default function Services() {
       console.log('Ваше имя:', name);
       console.log('Электронный адрес:', email);
       console.log('Ваше обращение:', message);
+      sendMail(name,email, message)
     }
   };
 
