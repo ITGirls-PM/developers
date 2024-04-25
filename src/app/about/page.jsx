@@ -23,14 +23,20 @@ export default function About() {
 
   const validateEmail = (value) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!regex.test(value)) {
-      setEmailError('Введите корректный email');
+    if(value == ''){
+      setEmailError(t('services-error-input'));
+        return false;
+    }
+    else if (!regex.test(value)) {
+      setEmailError('');
+      setEmailError(t('services-error-email'));
       return false;
     } else {
-      setEmailError('');
-      return true;
+        setEmailError('');
+        return true;
     }
-  };
+
+};
   return (
     <div className={style['about']}>
       <div className={style['about__title']}>{t('about-title')}</div>
@@ -51,11 +57,15 @@ export default function About() {
             <div className={style['about__cards_text']}>
               {t('about-cards-text-1')}
             </div>
-            <div>
-              <button className={style['about__cards_btn']}>
-                {t('about-button-1')}
-              </button>
-            </div>
+            <div >
+              <Link
+              href='https://t.me/remotellamascom'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Telegram link'>
+              <button className={style['about__cards_btn']}> {t('about-button-1')}</button>
+              </Link>
+              </div>
           </span>
           <span className={style['about__cards_img']}>
             <Image alt='meeting image' src={Meeting} width={470} height={340} />
@@ -79,23 +89,16 @@ export default function About() {
               </ul>
             </div>
             <div>
-              <input
-                type='text'
-                name='email'
-                className={style['about__cards_email']}
-                placeholder={t('about-input-2')}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                  validateEmail(e.target.value);
-                }}
-              />
-              <button
-                className={style['about__cards_btn']}
-                onClick={handleSubmit}
-              >
-                {t('about-button-2')}
-              </button>
-              {emailError && <div>{emailError}</div>}
+            <input 
+            type="text" 
+            name="email" 
+            className={style['about__cards_email']} 
+            placeholder={t('about-input-2')}
+            required
+            onChange={(e) => {setEmail(e.target.value);
+            validateEmail(e.target.value)}}/> 
+            <button className={style['about__cards_btn']} onClick={handleSubmit}>{t('about-input-2')}</button>
+            {emailError && <div style={{ fontSize: 12, color: 'green' }}>{emailError}</div>} 
             </div>
           </span>
         </div>

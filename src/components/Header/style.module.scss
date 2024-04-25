@@ -7,107 +7,113 @@
   width: 100%;
   padding: 20px 40px;
   box-sizing: border-box;
-  @media screen and (max-width: 1075px) {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    position: relative;
+  @media screen and (max-width: 838px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position:relative;
   }
 
   &__navbar {
-    display: flex;
-    flex-direction: row;
-    gap: 45px;
-    font-size: 20px;
-    color: #000000;
-    font-weight: 400;
-    list-style-type: none;
-    padding: 0;
-    margin: 25px;
-
-    @media screen and (max-width: 1075px) {
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    & > li > a {
-      color: inherit;
-      text-decoration: none;
-      cursor: pointer;
-      position: relative;
-      transition: 0.3s ease;
-      display: block;
-
-      &:hover,
-      :active {
-        &:before {
-          content: '';
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          height: 2px;
-          background-color: #66bb37;
-          transition: height 0.3s ease, opacity 0.3s ease;
-          opacity: 1;
-        }
-      }
-      &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 0;
-        background-color: #7ac943;
-        transition: height 0.3s ease, opacity 0.3s ease;
-        opacity: 0;
-      }
-    }
-  }
-
-  &__icons {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    margin-left: auto;
-    gap: 10px;
-    cursor: pointer;
-
-    &:last-of-type {
-      border-radius: 20px;
-    }
-
-    @media screen and (max-width: 1075px) {
-      margin-left: 0;
-    }
-
-    @media screen and (min-width: 1460px) {
-      margin-left: 20%;
-    }
-  }
-  &__buttons {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    margin-left: 30px;
-
-    @media screen and (max-width: 1075px) {
-      margin-left: 0;
-      margin-top: 20px;
-    }
-
-    & > button {
-      background: none;
-      border: solid 2px white;
+      display: flex;
+      flex-direction: row;
+      gap: 45px;
       font-size: 20px;
       color: #000000;
       font-weight: 400;
-      opacity: 0.5;
-      cursor: pointer;
-      &:hover {
-        border: solid 2px #7ac943;
+      list-style-type: none;
+      padding: 0;
+      margin: 25px;
+
+      @media screen and (max-width: 838px) {
+          flex-direction: column;
+          gap: 20px;
+          font-size: 20px;
       }
-    }
+
+      @media screen and (max-width: 1175px) {
+          font-size: 15px;
+          gap: 25px;
+      }
+
+      & > li > a {
+          color: inherit;
+          text-decoration: none;
+          cursor: pointer;
+          position: relative;
+          transition: 0.3s ease;
+
+          &:hover {
+              &:before {
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  height: 2px;
+                  background-color: #66bb37;
+                  transition: height 0.3s ease, opacity 0.3s ease;
+                  opacity: 1;
+              }
+          }
+             &:before {
+              content: '';
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              height: 0;
+              background-color:#7AC943;
+              transition: height 0.3s ease, opacity 0.3s ease;
+              opacity: 0;
+          }
+        }
+  }
+
+  &__icons {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      margin-left: auto;
+      gap:10px;
+      cursor: pointer;
+
+      &:last-of-type{
+          border-radius: 20px}
+
+      @media screen and (max-width: 1175px) {
+          margin-left: 0;
+      }
+
+      @media screen and (min-width: 1460px) {
+          margin-left: 20%;
+      }
+  }
+  &__buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 30px;
+
+      @media screen and (max-width: 1175px) {
+          margin-left: 20px;
+      }
+
+      & > button  {
+          background: none;
+          border: solid 2px white;
+          font-size: 20px;
+          color: #000000;
+          font-weight: 400;
+          opacity: 0.5;
+          cursor: pointer;
+          &:hover {
+              border: solid 2px #7AC943;
+          }
+          @media screen and (max-width: 1175px) {
+              font-size: 15px;
+          }
+      }
+
   }
 }

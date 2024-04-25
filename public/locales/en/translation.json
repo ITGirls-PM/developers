@@ -56,6 +56,7 @@
   "services-error-name": "Please enter only letters and spaces",
   "services-error-email": "Please enter a valid email",
   "services-error-consent": "Confirm your consent",
+  "services-error-input": "Fill in this field",
 
   "not-found-title": "There is no such page.",
   "not-found-button": "Go back to the main page",

@@ -53,6 +53,7 @@
   "services-error-name": "Пожалуйста, введите только буквы и пробелы",
   "services-error-email": "Введите корректный email",
   "services-error-consent": "Необходимо согласие",
+  "services-error-input": "Заполните это поле",
 
   "practice-title": "Кейсы из практики",
 
