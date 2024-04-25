@@ -13,9 +13,15 @@ export default function Services() {
   const [message, setMessage] = useState('');
   const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
+  const [isChecked, setIsChecked] = useState(false);
+  const [consentError, setConsentError] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if(!isChecked){
+      setConsentError(t('services-error-consent'));
+      return
+    }
     if (validateName(name) && validateEmail(email)) {
       console.log('Ваше имя:', name);
       console.log('Электронный адрес:', email);
@@ -92,10 +98,14 @@ export default function Services() {
             />
           </div>
           <button type="submit">{t('services-button')}</button>
-          <span>
-            ✓{t('services-policy')}
-            <Link href="/privacy-policy">{t('services-policy-a')}</Link>
-          </span>
+          {consentError && (
+          <span style={{ fontSize: 12, color: 'green' }}>{consentError}</span>)} 
+          <div>
+            <input type="checkbox" id="agree" name="agree" style={{ width: 'auto', margin: 5 }} checked={isChecked}
+            onChange={() => setIsChecked(!isChecked)}/>
+            <label for="agree">{t('services-policy')} 
+            <Link href="/privacy-policy"> {t('services-policy-a')}</Link></label>
+            </div>
         </form>
       </div>
       <div className={style['services__sectionTwo']}>
