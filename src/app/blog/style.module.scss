@@ -1,4 +1,4 @@
-@import '../globals.scss';
+@import '../text-styles';
 
 .blog {
   max-width: 100%;
@@ -8,26 +8,18 @@
   justify-content: center;
   align-items: center;
   gap: 10vh;
-  color: $black;
+  color: var(--black);
   width: 100%;
-  padding-top: 80px;
 }
 .heading {
-  font-family: 'Montserrat', sans-serif;
-  color: $black;
-  font-size: 32px;
-  font-style: normal;
-  line-height: 1.23;
-  font-weight: 600;
-  text-align: center;
+  @extend %heading-font;
   margin: 0;
 }
 @media (width < 960px) {
   .heading {
-    padding: 10vw;
+    padding: 1vw;
   }
   .blog {
-    gap: 15vw;
-    padding-top: 20px;
+    gap: 5vw;
   }
 }

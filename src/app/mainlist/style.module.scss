@@ -1,4 +1,4 @@
-@import '../globals.scss';
+@import '../text-styles';
 
 .mainblock {
   display: flex;
@@ -33,11 +33,7 @@
   }
 
   &__title {
-    color: $black;
-    font-size: 42px;
-    line-height: 1.23;
-    font-style: normal;
-    font-weight: 600;
+    @extend %heading-font;
     position: relative;
 
     @media screen and (max-width: 960px) {
@@ -58,11 +54,7 @@
   }
 
   &__list {
-    font-weight: 300;
-    color: $black;
-    font-size: 20px;
-    line-height: 1.55;
-    font-style: normal;
+    @extend %text-medium-font;
     padding-inline-start: 24px;
 
     @media screen and (max-width: 960px) {
@@ -109,12 +101,9 @@
   padding: 0 83px;
 
   &__text {
-    white-space: pre-line;
-    font-weight: 300;
-    color: $black;
+    @extend %text-medium-font;
     font-size: 22px;
-    line-height: 1.55;
-    font-style: normal;
+    white-space: pre-line;
     text-align: center;
 
     @media screen and (max-width: 960px) {

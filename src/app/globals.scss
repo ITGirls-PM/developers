@@ -5,66 +5,16 @@
   font-style: normal;
 }
 
-// colors
-$yellow: #f9f94b;
-$green: #7ac943;
-$white: #ffffff;
-$black: #262626;
-
-// text styles
-%header__navbar-font {
-  font-family: 'Montserrat', sans-serif;
-  color: $black;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 2.4px;
-  text-transform: uppercase;
-  text-decoration: none;
-  list-style-type: none;
-}
-
-%heading-font {
-  font-family: 'Montserrat', sans-serif;
-  color: $black;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 600;
-  text-align: center;
-}
-
-%subtitle-font {
-  font-family: 'Montserrat', sans-serif;
-  color: $black;
-  font-size: 24px;
-  line-height: 1.35;
-  font-style: normal;
-  font-weight: 600;
-}
-
-%text-font {
-  font-family: 'Montserrat', sans-serif;
-  color: $black;
-  font-size: 14px;
-  line-height: 1.55;
-  font-style: normal;
-  font-weight: 300;
-}
-
-%button-font {
-  font-family: 'Montserrat', sans-serif;
-  color: $white;
-  font-size: 14px;
-  line-height: 1.55;
-  font-style: normal;
-  font-weight: 700;
-  text-align: center;
-}
-
 .body {
   margin: 0 auto;
   min-width: 320px;
   max-width: 1440px;
   margin: 0 auto;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
+
+  // colors
+  --yellow: #f9f94b;
+  --green: #7ac943;
+  --white: #ffffff;
+  --black: #262626;
 }

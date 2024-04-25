@@ -1,60 +1,56 @@
-@import "../../app/globals.scss";
-
 .up-btn {
-    display: none;
-    opacity: 0;
-    transition: opacity 1s ease;
-  
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease;
+
+  &_inview {
+    display: flex;
+    opacity: 1;
+    position: fixed;
+    right: 45px;
+    bottom: 110px;
+    cursor: pointer;
+    z-index: 999;
+    background-color: var(--green);
+    backdrop-filter: blur(5px);
+    border-radius: 100px;
+    padding: 15px;
+    width: 47px;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--yellow);
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .up-btn {
     &_inview {
-      display: flex;
-      opacity: 1;
-      position: fixed;
-      right: 45px;
-      bottom: 110px;
-      cursor: pointer;
-      z-index: 999;
-      background-color: $green;
-      backdrop-filter: blur(5px);
-      border-radius: 100px;
-      padding: 15px;
-      width: 47px;
-      height: 47px;
-      justify-content: center;
-      align-items: center;
-      transition: background-color 0.3s ease-in-out;
-  
-  
-      &:hover {
-        background-color: $yellow;
-      }
-  
-      &:focus-visible {
-        outline: none;
-      }
+      right: 30px;
     }
   }
-  
-  @media screen and (max-width: 1000px) {
-    .up-btn {
-      &_inview {
-        right: 30px;
-      }
+}
+
+@media screen and (max-width: 900px) {
+  .up-btn {
+    &_inview {
+      right: 20px;
     }
   }
-  
-  @media screen and (max-width: 900px) {
-    .up-btn {
-      &_inview {
-        right: 20px;
-      }
+}
+
+@media screen and (max-width: 560px) {
+  .up-btn {
+    &_inview {
+      right: 10px;
     }
   }
-  
-  @media screen and (max-width: 560px) {
-    .up-btn {
-      &_inview {
-        right: 10px;
-      }
-    }
-  }
-  
+}
