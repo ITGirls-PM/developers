@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import style from './style.module.scss';
+import '../../18n';
 
 const formatedDate = (date) => {
   const time = new Date(date);

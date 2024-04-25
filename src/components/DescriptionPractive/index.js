@@ -29,20 +29,20 @@ export default function DescriptionPractice(props) {
   return (
     <p className={style['practice__text']}>
       {firstPartText}
-      <p
+      <span
         className={style['practice__common-text']}
         style={clicked ? { display: 'none' } : { display: 'inline' }}
       >
-        <bottom className={style['practice__bottom']} onClick={handleClicked}>
+        <button className={style['practice__button']} onClick={handleClicked}>
           ...
-        </bottom>
-      </p>
-      <p
+        </button>
+      </span>
+      <span
         className={style['practice__common-text']}
         style={clicked ? { display: 'inline' } : { display: 'none' }}
       >
         {secondPartText}
-      </p>
+      </span>
     </p>
   );
 }
