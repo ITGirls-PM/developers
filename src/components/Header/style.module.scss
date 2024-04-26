@@ -24,15 +24,16 @@
     margin: 25px;
     @extend %header__navbar-font;
 
-    @media screen and (max-width: 838px) {
-      flex-direction: column;
-      gap: 20px;
-      font-size: 20px;
-    }
 
     @media screen and (max-width: 1175px) {
       font-size: 15px;
       gap: 25px;
+    }
+
+    @media screen and (max-width: 838px) {
+      flex-direction: column;
+      gap: 7px;
+      font-size: 15px;
     }
 
     & > li > a {

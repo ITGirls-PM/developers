@@ -6,13 +6,11 @@
   align-items: center;
 
   &__heading {
-    margin-top: 0px;
+    margin: 0px;
     @extend %heading-font;
-    margin-bottom: 60px;
 
     @media screen and (max-width: 1075px) {
       font-size: 32px;
-      margin-bottom: 55px;
     }
   }
 
@@ -34,11 +32,12 @@
   }
 
   &__wrapper {
-    margin-top: 60px;
+    margin-top: 30px;
     width: 55%;
   }
 
   &__text {
+    text-align: center;
     @extend %text-medium-font;
   }
 
