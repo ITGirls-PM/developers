@@ -1,4 +1,4 @@
-@import './../../../src/app/globals.scss';
+@import './../../../src/app/text-styles.scss';
 
 .practice__section-image {
   height: auto;
@@ -15,13 +15,7 @@
   max-width: 100%;
 }
 .practice__title {
-  color: $black;
-  font-size: 30px;
-  line-height: 1.23;
-  font-style: normal;
-  font-weight: 600;
-  margin: 2px;
-  padding-bottom: 2vw;
+  @extend %subtitle-font;
 }
 
 @media (width < 960px) {

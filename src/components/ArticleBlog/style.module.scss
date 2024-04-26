@@ -1,4 +1,4 @@
-@import './../../../src/app/globals.scss';
+@import './../../../src/app/text-styles.scss';
 
 .blog__section-image {
   height: auto;
@@ -17,24 +17,16 @@
   max-width: 50%;
 }
 .blog__time {
-  color: $black;
+  color: var(--black);
   opacity: 70%;
 }
 .blog__title {
-  color: $black;
-  font-size: 30px;
-  line-height: 1.23;
-  font-style: normal;
-  font-weight: 600;
+  @extend %subtitle-font;
   margin: 2px;
   padding-bottom: 1vw;
 }
 .blog__text {
-  white-space: pre-line;
-  font-weight: 300;
-  color: $black;
-  line-height: 1.75;
-  font-size: 18px;
+  @extend %text-font;
 }
 @media (width < 960px) {
   .blog__article {

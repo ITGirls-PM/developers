@@ -1,9 +1,11 @@
 'use client';
 
 import { useState } from 'react';
+import { Translation, useTranslation } from 'react-i18next';
 import style from './style.module.scss';
 
 export default function DescriptionPractice(props) {
+  const { t } = useTranslation();
   const [clicked, setClicked] = useState(false);
   const handleClicked = () => {
     setClicked(!clicked);
@@ -20,7 +22,7 @@ export default function DescriptionPractice(props) {
     return clicedText;
   };
   const clicedNumberValue = clicedNumber();
-  let firstPartText = text.slice(0, clicedNumberValue) + '  ';
+  let firstPartText = text.slice(0, clicedNumberValue);
   let secondPartText = text.slice(clicedNumberValue + 1);
   if (text.slice(clicedNumberValue + 1)[0] !== ' ') {
     secondPartText = ' ' + text.slice(clicedNumberValue + 1);
@@ -42,6 +44,9 @@ export default function DescriptionPractice(props) {
         style={clicked ? { display: 'inline' } : { display: 'none' }}
       >
         {secondPartText}
+        <button className={style['practice__button']} onClick={handleClicked}>
+          {t('practice-button')}
+        </button>
       </span>
     </p>
   );

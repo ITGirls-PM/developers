@@ -1,4 +1,4 @@
-@import '../globals.scss';
+@import '../text-styles';
 
 .practice__container {
   display: grid;
@@ -17,26 +17,17 @@
   justify-content: center;
   align-items: center;
   gap: 10vh;
-  color: $black;
-  padding: 80px 40px 0px 40px;
+  color: var(--black);
+  padding: 0px 40px 0px 40px;
 }
 .heading {
-  font-family: 'Montserrat', sans-serif;
-  color: $black;
-  font-size: 32px;
-  font-style: normal;
-  line-height: 1.23;
-  font-weight: 600;
-  text-align: center;
   margin: 0;
+  @extend %heading-font;
 }
 @media (width < 960px) {
-  .heading {
-    padding: 5vw;
-  }
   .practice {
     gap: 15vw;
-    padding-top: 20px;
+    padding-top: 10px;
   }
   .practice__info {
     max-width: 100%;
@@ -47,11 +38,5 @@
     justify-items: center;
     align-self: center;
     gap: 5vw;
-  }
-}
-@media (width < 640px) {
-  .heading {
-    padding-top: 2vw;
-    padding-bottom: 2vw;
   }
 }
