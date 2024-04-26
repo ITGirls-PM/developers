@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru" style={{ scrollBehavior: 'smooth' }} className="html">
       <head>
-        <title>RamoteLamas</title>
+        <title>RemoteLamas</title>
         <meta name="description" content="Личная страница Георга" />
         <link rel="icon" href="/images/favicon.ico" sizes="any" />
       </head>

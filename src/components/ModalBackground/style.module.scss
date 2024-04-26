@@ -1,0 +1,34 @@
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    background-color: #0706067f;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(2.5px);
+    scrollbar-gutter: stable both-edges;
+  
+    &_show {
+      animation: show .3s;
+  
+      @keyframes show {
+        from {
+          opacity: 0;
+        }
+        
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-height: 830px) {
+    .modal-background {
+      overflow-y: auto;
+    }
+  }
+  
