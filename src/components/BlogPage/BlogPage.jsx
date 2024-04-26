@@ -23,6 +23,14 @@ export default function BlogPage() {
     } else {
       items = blogDataEn;
     }
+  }, []);
+
+  useEffect(() => {
+    if (i18n.language === 'ru') {
+      items = blogData;
+    } else {
+      items = blogDataEn;
+    }
   }, [i18n.language]);
 
   let items;
@@ -61,7 +69,7 @@ export default function BlogPage() {
             }}
             disabled={currentPage - 1 <= 0}
           >
-            <Image alt='arrow-left' src={arrowLeft} width={50} height={50} />
+            <Image alt="arrow-left" src={arrowLeft} width={50} height={50} />
           </button>
           <span className={style['pagination__text']}>
             {currentPage}/{pagesCount}
@@ -74,7 +82,7 @@ export default function BlogPage() {
             }}
             disabled={currentPage + 1 > pagesCount}
           >
-            <Image alt='arrow-rigth' src={arrowRight} width={50} height={50} />
+            <Image alt="arrow-rigth" src={arrowRight} width={50} height={50} />
           </button>
         </span>
       )}
