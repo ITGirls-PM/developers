@@ -10,18 +10,29 @@
   &__title,
   &__sectitle {
     @extend %heading-font;
+    @media screen and (max-width: 1075px) {
+      font-size: 24px;
+    }
 
     &_description {
       width: 560px;
       padding-bottom: 10px;
       text-align: center;
       @extend %text-medium-font;
+      @media screen and (max-width: 1075px) {
+        font-size: 14px;
+        width: 320px;
+      }
     }
 
     &_content {
       width: 560px;
       text-align: center;
       @extend %text-medium-font;
+      @media screen and (max-width: 1075px) {
+        font-size: 14px;
+        width: 320px;
+      }
     }
   }
 
@@ -40,17 +51,25 @@
 
       @media screen and (max-width: 1075px) {
         display: grid;
+        justify-content: center;
       }
     }
 
     &_title {
       @extend %subtitle-font;
+      @media screen and (max-width: 1075px) {
+        font-size: 18px;
+      }
     }
 
     &_text {
       margin: 30px 0;
       width: 400px;
       @extend %text-medium-font;
+      @media screen and (max-width: 1075px) {
+        font-size: 14px;
+        width: 270px;
+      }
     }
 
     &_btn {
@@ -62,6 +81,7 @@
       border-radius: 30px;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      margin-top: 20px;
 
       & > a {
         color: inherit;
