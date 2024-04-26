@@ -1,13 +1,13 @@
-'use client';
-import React from 'react';
-import Image from 'next/image';
-import Georgchair from '../../../public/images/mainList/georgchair.webp';
-import SeaMainList from '../../../public/images/mainList/sea-main-list.webp';
-import style from './style.module.scss';
-import { useTranslation } from 'next-i18next';
+'use client'
+import React from 'react'
+import Image from 'next/image'
+import Georgchair from '../../../public/images/mainList/georgchair.webp'
+import SeaMainList from '../../../public/images/mainList/sea-main-list.webp'
+import style from './style.module.scss'
+import { useTranslation } from 'next-i18next'
 
 export default function MainList() {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
   return (
     <main className={style['mainblock']}>
       <div className={style['mainblock__box']}>
@@ -30,7 +30,7 @@ export default function MainList() {
             <li className={style['mainblock__item']}>{t('main-li-2')}</li>
             <li className={style['mainblock__item']}>{t('main-li-3')}</li>
             <li className={style['mainblock__item']}>{t('main-li-4')}</li>
-            <li className={style['mainblock__item']}>{t('main-li-6')}</li>
+            <li className={style['mainblock__item']}>{t('main-li-5')}</li>
             <li className={style['mainblock__item']}>{t('main-li-6')}</li>
           </ul>
         </section>
@@ -41,5 +41,5 @@ export default function MainList() {
         />
       </div>
     </main>
-  );
+  )
 }

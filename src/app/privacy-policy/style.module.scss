@@ -51,5 +51,12 @@
         line-height: 131%;
       }
     }
+
+    &_column {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      justify-items: start;
+      text-align: left;
+    }
   }
 }
