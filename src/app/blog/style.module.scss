@@ -13,7 +13,7 @@
 }
 .heading {
   @extend %heading-font;
-  margin: 0;
+  margin: 0px;
 }
 @media (width < 960px) {
   .heading {

@@ -17,12 +17,11 @@
   max-width: 50%;
 }
 .blog__time {
-  color: var(--black);
-  opacity: 70%;
+  color: #b5b0b0;
 }
 .blog__title {
   @extend %subtitle-font;
-  margin: 2px;
+  margin: 0px;
   padding-bottom: 1vw;
 }
 .blog__text {

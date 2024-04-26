@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import style from './style.module.scss';
 import '../../18n';
+import DescriptionBlog from '../DescriptionBlog/DescriptionBlog';
 
 const formatedDate = (date) => {
   const time = new Date(date);
@@ -18,7 +19,7 @@ const ArticleBlog = (props) => {
     <article className={style['blog__article']}>
       <Image
         className={style['blog__section-image']}
-        alt='image-section'
+        alt="image-section"
         src={props.image}
         width={460}
         height={306}
@@ -26,7 +27,8 @@ const ArticleBlog = (props) => {
       <div className={style['blog__info']}>
         <h2 className={style['blog__title']}>{props.title}</h2>
         <span className={style['blog__time']}>{formatedDate(props.time)}</span>
-        <p className={style['blog__text']}>{props.text}</p>
+        <DescriptionBlog className={style['blog__text']} text={props.text} />
+        {/* <p className={style['blog__text']}>{props.text}</p> */}
       </div>
     </article>
   );

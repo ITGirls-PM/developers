@@ -21,18 +21,33 @@
     margin-top: 5px;
   }
 }
-.services__button {
-  margin: auto;
-  background-color: var(--green);
-  padding: 5px 10px;
-  border: none;
-  border-radius: 30px;
+.services__button-info {
+  @extend %text-font;
   cursor: pointer;
-  outline: none;
-  transition: background-color 0.3s ease;
-  @extend %button-font;
-  font-size: 12px;
+  border: none;
+  background-color: #fff;
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--green);
+  transition: 0.3s ease;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--black);
+    transition: height 0.3s ease, opacity 0.3s ease;
+  }
 }
+//   margin: auto;
+//   background-color: var(--green);
+//   padding: 5px 10px;
+//   border: none;
+//   border-radius: 30px;
+//   cursor: pointer;
+//   outline: none;
+//   transition: background-color 0.3s ease;
+//   @extend %button-font;
+//   font-size: 12px;
+// }
 .services__subtitle {
   @extend %text-medium-font;
 
