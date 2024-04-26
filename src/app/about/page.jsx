@@ -103,7 +103,7 @@ export default function About() {
             onChange={(e) => {setEmail(e.target.value);
             validateEmail(e.target.value)}}/> 
             {emailError && <div style={{ fontSize: 12, color: 'green' }}>{emailError}</div>} 
-            <div><button className={style['about__cards_btn']} onClick={handleSubmit}>{t('about-input-2')}</button></div>
+            <div><button className={style['about__cards_btn']} onClick={handleSubmit}>{t('about-button-2')}</button></div>
             </div>
           </span>
         </div>
