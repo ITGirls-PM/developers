@@ -8,7 +8,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import '../../18n';
-
+const imageStyle = {
+    width: '350px',
+    height: '240px',
+  }
 export default function About() {
   const { t } = useTranslation();
   const [email, setEmail] = useState('');
@@ -20,6 +23,8 @@ export default function About() {
       console.log('Электронный адрес:', email);
     }
   };
+
+  
 
   const validateEmail = (value) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -68,13 +73,13 @@ export default function About() {
               </div>
           </span>
           <span className={style['about__cards_img']}>
-            <Image alt='meeting image' src={Meeting} width={470} height={340} />
+            <Image alt='meeting image' src={Meeting} style={imageStyle} />
           </span>
         </div>
 
         <div className={style['about__cards_cardCont']}>
           <span className={style['about__cards_img']}>
-            <Image alt='meeting image' src={Library} width={470} height={340} />
+            <Image alt='meeting image' src={Library} style={imageStyle} />
           </span>
           <span>
             <div className={style['about__cards_title']}>
@@ -97,8 +102,8 @@ export default function About() {
             required
             onChange={(e) => {setEmail(e.target.value);
             validateEmail(e.target.value)}}/> 
-            <button className={style['about__cards_btn']} onClick={handleSubmit}>{t('about-input-2')}</button>
             {emailError && <div style={{ fontSize: 12, color: 'green' }}>{emailError}</div>} 
+            <div><button className={style['about__cards_btn']} onClick={handleSubmit}>{t('about-input-2')}</button></div>
             </div>
           </span>
         </div>
@@ -125,7 +130,7 @@ export default function About() {
             </div>
           </span>
           <span className={style['about__cards_img']}>
-            <Image alt='meeting image' src={Coffee} width={470} height={340} />
+            <Image alt='meeting image' src={Coffee} style={imageStyle} />
           </span>
         </div>
       </div>
