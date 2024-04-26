@@ -17,8 +17,9 @@
     &_description {
       width: 560px;
       padding-bottom: 10px;
-      text-align: center;
+      text-align: center; 
       @extend %text-medium-font;
+      font-weight: 600;
       @media screen and (max-width: 1075px) {
         font-size: 14px;
         width: 320px;

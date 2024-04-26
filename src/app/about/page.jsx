@@ -64,7 +64,7 @@ export default function About() {
             </div>
             <div >
               <Link
-              href='https://t.me/remotellamascom'
+              href='https://t.me/remotellamas'
               target='_blank'
               rel='noopener noreferrer'
               aria-label='Telegram link'>
