@@ -33,13 +33,6 @@
     background-size: cover;
     background-position: top;
     @extend %text-medium-font;
-    & > ul > li {
-      padding-top: 0;
-      margin-top: 15px;
-      @media screen and (max-width: 756px) {
-        margin-top: 5px;
-      }
-    }
 
     @media screen and (max-width: 756px) {
       height: 80vh;
@@ -98,10 +91,5 @@
 
   button[type='submit']:hover {
     background-color: var(--black);
-  }
-
-  span {
-    width: 70%;
-    margin: auto;
   }
 }
