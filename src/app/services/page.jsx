@@ -5,6 +5,7 @@ import Image from 'next/image';
 import shoppingLama from '../../../public/images/Services/lama-shopping.webp';
 import Link from 'next/link';
 import ArticleServices from '@/components/ArticleServices';
+import Popup from '@/components/Popup';
 import {
   serviceData,
   serviceDataEn,
@@ -12,11 +13,13 @@ import {
 import { useTranslation } from 'next-i18next';
 import '../../18n';
 
+
 export default function Services() {
   const { t, i18n } = useTranslation();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [infoMsg, setInfoMsg] = useState('');
   const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
   const [isChecked, setIsChecked] = useState(false);
@@ -29,16 +32,43 @@ export default function Services() {
     false,
   ]);
 
-  const handleSubmit = (e) => {
+  const sendMail = async () => {
+    try {
+      const response = await fetch('/api/sendMail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message
+        })
+      });
+      console.log(await response.json());
+    } catch (error) {
+      console.error('Failed to send email:', error);
+    }
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!isChecked) {
       setConsentError(t('services-error-consent'));
       return;
     }
     if (validateName(name) && validateEmail(email)) {
-      console.log('Ваше имя:', name);
-      console.log('Электронный адрес:', email);
-      console.log('Ваше обращение:', message);
+      try {
+        await sendMail(name, email, message);
+        setInfoMsg('Заявка успешно отправлена!');
+        setName('');
+        setEmail('');
+        setMessage('');
+        setIsChecked(false);
+      } catch (error) {
+        console.error('Failed to send email:', error);
+        setInfoMsg('Ошибка отправки!');
+      }
     }
   };
 
@@ -175,6 +205,7 @@ export default function Services() {
         })}
       </ul>
       <div className={style['services__sectionTwo']}></div>
+      <Popup infoMsg={infoMsg} />
     </div>
   );
 }
