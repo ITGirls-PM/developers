@@ -4,6 +4,7 @@ import style from './style.module.scss';
 import Meeting from '../../../public/images/About/meeting.webp';
 import Library from '../../../public/images/About/library.webp';
 import Coffee from '../../../public/images/About/coffee.webp';
+import Popup from '@/components/Popup';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
@@ -16,11 +17,37 @@ export default function About() {
   const { t } = useTranslation();
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
+  const [infoMsg, setInfoMsg] = useState('');
 
-  const handleSubmit = (e) => {
+  const sendMail = async () => {
+    try {
+      const response = await fetch('/api/sendMail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email,
+        })
+      });
+      console.log(await response.json());
+    } catch (error) {
+      console.error('Failed to send email:', error);
+    }
+  };
+
+  
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateEmail(email)) {
-      console.log('Электронный адрес:', email);
+      try {
+        await sendMail(email);
+        setInfoMsg('Заявка успешно отправлена!');
+        setEmail('');
+      } catch (error) {
+        console.error('Failed to send email:', error);
+        setInfoMsg('Ошибка отправки!');
+      }
     }
   };
 
@@ -134,10 +161,8 @@ export default function About() {
           </span>
         </div>
       </div>
+      <Popup infoMsg={infoMsg} />
     </div>
   );
 }
 
-function Email() {
-  console.log('ti smog');
-}
