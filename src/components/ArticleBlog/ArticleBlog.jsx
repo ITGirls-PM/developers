@@ -28,7 +28,6 @@ const ArticleBlog = (props) => {
         <h2 className={style['blog__title']}>{props.title}</h2>
         <span className={style['blog__time']}>{formatedDate(props.time)}</span>
         <DescriptionBlog className={style['blog__text']} text={props.text} />
-        {/* <p className={style['blog__text']}>{props.text}</p> */}
       </div>
     </article>
   );

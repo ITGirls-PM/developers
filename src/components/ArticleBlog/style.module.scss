@@ -9,8 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding-left: 40px;
-  padding-right: 40px;
+
   gap: 5vw;
 }
 .blog__info {
@@ -35,7 +34,6 @@
     align-items: center;
     gap: 1.5vw;
     max-width: 640px;
-    padding: 0 45px;
   }
   .blog__section-image {
     height: auto;
