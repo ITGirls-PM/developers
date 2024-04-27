@@ -20,7 +20,7 @@ const ArticleServices = (props) => {
           <p className={style['services__text']}>{props.text}</p>
         ) : (
           <button
-            className={style['services__button']}
+            className={style['services__button-info']}
             onClick={props.handleChange}
           >
             {t('services-button-info')}

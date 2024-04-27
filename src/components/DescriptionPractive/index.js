@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Translation, useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import style from './style.module.scss';
 
 export default function DescriptionPractice(props) {

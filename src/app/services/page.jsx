@@ -101,6 +101,14 @@ export default function Services() {
     } else {
       data = serviceDataEn;
     }
+  }, []);
+
+  useEffect(() => {
+    if (i18n.language === 'ru') {
+      data = serviceData;
+    } else {
+      data = serviceDataEn;
+    }
   }, [i18n.language]);
 
   if (i18n.language === 'ru') {

@@ -1,0 +1,31 @@
+@import './../../../src/app/text-styles.scss';
+
+.blog__text {
+  @extend %text-font;
+  text-indent: 15px;
+  word-wrap: break-word;
+}
+.blog__button {
+  @extend %text-font;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--green);
+  transition: 0.3s ease;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--black);
+    transition: height 0.3s ease, opacity 0.3s ease;
+  }
+}
+.blog__common-text {
+  white-space: pre-line;
+}
+@media (width< 640px) {
+  .blog__text {
+    line-height: 1.55;
+    margin: 0;
+  }
+}
