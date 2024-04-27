@@ -37,7 +37,7 @@
     position: relative;
 
     @media screen and (max-width: 960px) {
-      font-size: 38px;
+      font-size: 36px;
     }
   }
 
@@ -58,7 +58,7 @@
     padding-inline-start: 24px;
 
     @media screen and (max-width: 960px) {
-      font-size: 18px;
+      font-size: 17px;
     }
   }
 
@@ -100,6 +100,10 @@
   margin-inline-end: 22px;
   padding: 0 83px;
 
+  @media screen and (max-width: 756px) {
+    width: 70%;
+  }
+
   &__text {
     @extend %text-medium-font;
     font-size: 22px;
@@ -108,6 +112,10 @@
 
     @media screen and (max-width: 960px) {
       font-size: 20px;
+    }
+
+    @media screen and (max-width: 756px) {
+      font-size: 18px;
     }
   }
 }
