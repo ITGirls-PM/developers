@@ -22,9 +22,10 @@ export async function POST(request) {
             subject: "Заявка",
             html: `
         <h3>Привет, новая заявка!</h3>
-        <li> name: ${name}</li>
-        <li> email: ${email}</li> 
-        <li> message: ${message}</li> 
+        <div>Если тут только email, то это заявка на рассылку, <br/>добавь этот email в базу рассылки.</div>
+        <li> Имя: ${name}</li>
+        <li> Email: ${email}</li> 
+        <li> Сообщение: ${message}</li> 
         `
         }
 
