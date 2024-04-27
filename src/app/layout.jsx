@@ -12,8 +12,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru" style={{ scrollBehavior: 'smooth' }} className="html">
       <head>
-        <title>RemoteLlamas</title>
-        <meta name="description" content="Личная страница Георга" />
+        <title>remotellamas</title>
+        <meta name="description" content="George Lambert | Executive Mentor" />
         <link rel="icon" href="/images/favicon.ico" sizes="any" />
       </head>
 
