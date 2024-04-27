@@ -51,5 +51,30 @@
         line-height: 131%;
       }
     }
+
+    &_column {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      justify-items: start;
+      text-align: left;
+    }
   }
+
+  &__button {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    background-color: var(--green);
+    border: none;
+    height: 45px;
+    padding: 0 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    @extend %button-font;
+   
+    &:hover {
+      background-color: var(--black);
+    }
+  }
+  
 }
