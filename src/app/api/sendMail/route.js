@@ -29,7 +29,8 @@ export async function POST(request) {
         `
         }
 
-        transporter.sendMail(mailOption)
+        const rs = await transporter.sendMail(mailOption)
+        console.log(rs)
 
         return NextResponse.json({ message: "Email Sent Successfully" }, { status: 200 })
     } catch (error) {
