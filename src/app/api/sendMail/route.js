@@ -7,7 +7,7 @@ export async function POST(request) {
 
         const transporter = nodemailer.createTransport({
             service: 'yandex',
-            host: 'smtp.yandex.com',
+            host: 'smtp.yandex.ru',
             port: 465,
             secure: true,
             auth: {
@@ -28,10 +28,10 @@ export async function POST(request) {
         <li> Сообщение: ${message}</li> 
         `
         }
+        
+        const rs = await transporter.sendMail(mailOption);
 
-        transporter.sendMail(mailOption)
-
-        return NextResponse.json({ message: "Email Sent Successfully" }, { status: 200 })
+        return NextResponse.json({ message: `Succes: ${rs}` }, { status: 200 })
     } catch (error) {
         return NextResponse.json({ message: "Failed to Send Email" }, { status: 500 })
     }
