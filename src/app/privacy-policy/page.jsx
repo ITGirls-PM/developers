@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useInView } from 'react-intersection-observer'
+import Link from 'next/link'
 
 import UpButton from '../../components/UpButton/index'
 import styles from './style.module.scss'
@@ -556,6 +557,11 @@ export default function PrivacyPolicy() {
             </p>
           </div>
         </div>
+        <Link href='/'>
+          <button className={styles['privacy__button']}>
+            Вернуться на главную
+          </button>
+        </Link>
       </div>
     </main>
   )
