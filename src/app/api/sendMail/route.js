@@ -28,16 +28,18 @@ export async function POST(request) {
         <li> Сообщение: ${message}</li> 
         `
         }
-
+        let msg
         transporter.sendMail(mailOption, (error, info) => {
             if (error) {
                 console.error('Не послал письмо:', error);
+                msg = error
             } else {
                 console.log('Успешно, вот ответ:', info.response);
+                msg = info.response
             }
         });
 
-        return NextResponse.json({ message: "Email Sent Successfully" }, { status: 200 })
+        return NextResponse.json({ message: msg }, { status: 200 })
     } catch (error) {
         return NextResponse.json({ message: "Failed to Send Email" }, { status: 500 })
     }
