@@ -129,10 +129,16 @@ export default function PrivacyPolicy() {
           </div>
           <div className={styles['privacy__content_block']}>
             <h3>{t('policy-common-6')}</h3>
-            <p>{t('policy-common-6-li-1')}</p>
-            <p>{t('policy-common-6-li-2')}</p>
-            <p>{t('policy-common-6-li-3')}</p>
-            <p>{t('policy-common-6-li-4')}</p>
+            <article className={styles['privacy__content_column']}>
+              <p>{t('policy-common-6-li-1')}</p>
+              <p>{t('policy-common-6-li-2')}</p>
+              <p>{t('policy-common-6-li-3')}</p>
+              <p>{t('policy-common-6-li-4')}</p>
+              <p>{t('policy-common-6-li-5')}</p>
+              <p>{t('policy-common-6-li-6')}</p>
+              <p>{t('policy-common-6-li-7')}</p>
+              <p>{t('policy-common-6-li-8')}</p>
+            </article>
           </div>
           <div className={styles['privacy__content_block']}>
             <h3>{t('policy-common-7')}</h3>
@@ -180,7 +186,7 @@ export default function PrivacyPolicy() {
         </div>
         <Link href="/">
           <button className={styles['privacy__button']}>
-            Вернуться на главную
+            {t('policy-common-button')}
           </button>
         </Link>
       </div>
