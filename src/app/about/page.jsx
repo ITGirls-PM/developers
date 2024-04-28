@@ -10,8 +10,8 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import '../../18n';
 const imageStyle = {
-    width: '350px',
-    height: '240px',
+    width: '320px',
+    height: '225px',
   }
 export default function About() {
   const { t } = useTranslation();
