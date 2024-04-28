@@ -13,7 +13,6 @@ import {
 import { useTranslation } from 'next-i18next';
 import '../../18n';
 
-
 export default function Services() {
   const { t, i18n } = useTranslation();
   const [name, setName] = useState('');
@@ -37,13 +36,13 @@ export default function Services() {
       const response = await fetch('/api/sendMail', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           name,
           email,
-          message
-        })
+          message,
+        }),
       });
       console.log(await response.json());
     } catch (error) {
@@ -178,7 +177,9 @@ export default function Services() {
               placeholder={t('services-placeholder-message')}
             />
           </div>
-          <button type="submit">{t('services-button')}</button>
+          <button disabled={isChecked ? false : true} type="submit">
+            {t('services-button')}
+          </button>
           {consentError && (
             <span style={{ fontSize: 12, color: 'green' }}>{consentError}</span>
           )}
