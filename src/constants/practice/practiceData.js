@@ -1,7 +1,7 @@
 const practiceData = [
   {
     id: 1,
-    image: '/images/practice/lama-reading.webp',
+    image: '/images/Practice/lama-reading.webp',
     title: 'Восприятие «удачи» в работе',
     text: `Чтобы завершить тему про «Как тебе повезло!» поделюсь, как мне помогает это в управлении командой. Начало в предыдущем посте. 
     До чего же удалось докопаться? Восприятие «удачи» — это очень важный показатель мышления любого профессионала. 
@@ -21,7 +21,7 @@ const practiceData = [
   },
   {
     id: 2,
-    image: '/images/practice/lama-training.webp',
+    image: '/images/Practice/lama-training.webp',
     title: 'Самоманипуляция',
     text: `Подозреваю, что те, кто родился на постсоветском пространстве, хотя бы раз слышал что-то вроде: «счастье любит тишину», «смотри не сглазь», «замолчи, накаркаешь ещё» и похожее. 
     Да, скрывать не буду, некоторые вещи сам не стремлюсь декламировать. По ощущению, иногда именно из-за той самой «тишины», которую так любит счастье. Коллективная травма?
@@ -37,7 +37,7 @@ const practiceData = [
   },
   {
     id: 3,
-    image: '/images/practice/lama-computer.webp',
+    image: '/images/Practice/lama-computer.webp',
     title: 'Долгий выход из праздников',
     text: `Кажется, что говорить про это уже поздно? Ну что сказать, если вы уже перестроились и нормально въехали в рабочий ритм, просто поставьте лайк под этим постом и идите дальше работать — вы умничка 😊
     А если вы — я, кто ещё тупит как windows vista (олды тут?) и даже на второй полноценной рабочей неделе скрипит к полудню от количества информации, знайте: это нормально 🐾
@@ -56,7 +56,7 @@ const practiceData = [
   },
   {
     id: 4,
-    image: '/images/practice/lama-graph.webp',
+    image: '/images/Practice/lama-graph.webp',
     title: 'Рабочие чаты и флудилки: внутренний распорядок',
     text: `1. Общий рабочий чат менеджмента \n
     Состав чата: я-2. Так как в моей команде несколько уровней менеджмента, необходим основной чат, где обсуждаются рабочие вопросы. Внутри участники всех направлений и подгрупп, которые отвечают за управление своими группами, проектами и отдельными направлениями работы. Основной чат, где решаются рабочие вопросы между любыми участниками всей команды. Дополнительная ценность — при необходимости можно обсудить нерабочие активности или скинуть фото-отчёт с корпоратива сразу на всех 😁
@@ -81,7 +81,7 @@ const practiceData = [
 const practiceDataEn = [
   {
     id: 1,
-    image: '/images/practice/lama-reading.webp',
+    image: '/images/Practice/lama-reading.webp',
     title: 'Perception of "good luck" at work',
     text: `To wrap up the "How Lucky You Are!" theme, I'll share how it helps me in managing my team. It started in the previous post. 
     What did it get to? The perception of "luck" is a very important indicator of any professional's mindset. 
@@ -100,7 +100,7 @@ const practiceDataEn = [
   },
   {
     id: 2,
-    image: '/images/practice/lama-training.webp',
+    image: '/images/Practice/lama-training.webp',
     title: 'Self-manipulation',
     text: `I suspect that those who were born in the post-Soviet space have at least once heard something like: "happiness loves silence", "don't jinx it", "shut up, you'll get jinxed" and the like. 
     Yes, I won't hide it, I don't try to recite some things myself. I feel like sometimes it's because of the very "silence" that happiness loves so much. Collective trauma?
@@ -115,7 +115,7 @@ const practiceDataEn = [
   },
   {
     id: 3,
-    image: '/images/practice/lama-computer.webp',
+    image: '/images/Practice/lama-computer.webp',
     title: 'A long way out of the holidays',
     text: `It seems like it's too late to talk about it now, doesn't it? Well what can I say, if you've already readjusted and got into a normal work rhythm, just put a like under this post and get on with your work - you're a good girl 😊
     And if you're me, who is still dumb as windows vista (oldies here?) and even on my second full work week cringing by noon from the amount of information, know this: it's normal 🐾
@@ -132,7 +132,7 @@ const practiceDataEn = [
   },
   {
     id: 4,
-    image: '/images/practice/lama-graph.webp',
+    image: '/images/Practice/lama-graph.webp',
     title: 'Work chats and fludilki: internal routine',
     text: `1. general management working chat \n
     Chat composition: me-2. Since there are several levels of management in my team, I need a main chat room where work issues are discussed. Inside, members of all areas and subgroups who are responsible for managing their groups, projects and individual work areas. A main chat room where work issues are resolved between any members of the entire team. Additional value - if necessary, you can discuss non-work activities or throw a photo report from a corporate event at once 😁
