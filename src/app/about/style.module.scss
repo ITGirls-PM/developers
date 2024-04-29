@@ -51,7 +51,7 @@
       width: 100%;
       margin-top: 30px;
 
-      @media screen and (max-width: 1075px) {
+      @media screen and (max-width: 838px) {
         display: grid;
         justify-content: center;
       }
@@ -126,7 +126,7 @@
     }
 
     &_img {
-      @media screen and (max-width: 1075px) {
+      @media screen and (max-width: 838px) {
         display: grid;
         grid-row: 1/2;
         margin-bottom: 30px;
