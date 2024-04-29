@@ -85,6 +85,30 @@ export default function MainList() {
             <li className={style['mainblock__item']}>{t('main-li-5')}</li>
             <li className={style['mainblock__item']}>{t('main-li-6')}</li>
           </ul>
+          <div className={style['mainblock__sub']}>
+            <textarea
+              type='text'
+              name='email'
+              className={style['mainblock__email']}
+              placeholder={t('main-input')}
+              required
+              onChange={(e) => {
+                setEmail(e.target.value)
+                validateEmail(e.target.value)
+              }}
+            />
+            {emailError && (
+              <div style={{ fontSize: 12, color: 'green' }}>{emailError}</div>
+            )}
+            <div>
+              <button
+                className={style['mainblock__btn']}
+                onClick={handleSubmit}
+              >
+                {t('main-button')}
+              </button>
+            </div>
+          </div>
         </section>
         <Image
           className={style['mainblock__image']}
@@ -92,27 +116,7 @@ export default function MainList() {
           src={SeaMainList}
         />
       </div>
-      <div className={style['mainblock__sub']}>
-        <textarea
-          type='text'
-          name='email'
-          className={style['mainblock__email']}
-          placeholder={t('main-input')}
-          required
-          onChange={(e) => {
-            setEmail(e.target.value)
-            validateEmail(e.target.value)
-          }}
-        />
-        {emailError && (
-          <div style={{ fontSize: 12, color: 'green' }}>{emailError}</div>
-        )}
-        <div>
-          <button className={style['mainblock__btn']} onClick={handleSubmit}>
-            {t('main-button')}
-          </button>
-        </div>
-      </div>
+
       <Popup infoMsg={infoMsg} />
     </main>
   )
