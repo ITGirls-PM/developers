@@ -1,0 +1,8 @@
+.about__cards_image{
+    width: 380px;
+    height: 280px;
+    @media screen and (max-width: 1075px) {
+      width: 320px;
+      height: 225px;
+    }
+}

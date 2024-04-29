@@ -9,15 +9,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import '../../18n';
-const imageStyle = {
-    width: '320px',
-    height: '225px',
-  }
+import imageStyle from './imgStyle.scss'
+
 export default function About() {
   const { t } = useTranslation();
-  const [email, setEmail] = useState('');
-  const [emailError, setEmailError] = useState('');
   const [infoMsg, setInfoMsg] = useState('');
+  /* const [email, setEmail] = useState('');
+  const [emailError, setEmailError] = useState('');
+  
 
   const sendMail = async () => {
     try {
@@ -68,7 +67,7 @@ export default function About() {
         return true;
     }
 
-};
+}; */
   return (
     <div className={style['about']}>
       <div className={style['about__title']}>{t('about-title')}</div>
@@ -100,13 +99,13 @@ export default function About() {
               </div>
           </span>
           <span className={style['about__cards_img']}>
-            <Image alt='meeting image' src={Meeting} style={imageStyle} />
+            <Image className='about__cards_image' alt='meeting image' src={Meeting}/>
           </span>
         </div>
 
         <div className={style['about__cards_cardCont']}>
           <span className={style['about__cards_img']}>
-            <Image alt='meeting image' src={Library} style={imageStyle} />
+            <Image alt='meeting image' src={Library} className='about__cards_image'/>
           </span>
           <span>
             <div className={style['about__cards_title']}>
@@ -120,8 +119,8 @@ export default function About() {
                 <li> {t('about-cards-text-2-li-4')}</li>
               </ul>
             </div>
-            <div>
-            <input 
+             <div>
+            {/*<input 
             type="text" 
             name="email" 
             className={style['about__cards_email']} 
@@ -130,8 +129,14 @@ export default function About() {
             onChange={(e) => {setEmail(e.target.value);
             validateEmail(e.target.value)}}/> 
             {emailError && <div style={{ fontSize: 12, color: 'green' }}>{emailError}</div>} 
-            <div><button className={style['about__cards_btn']} onClick={handleSubmit}>{t('about-button-2')}</button></div>
-            </div>
+            <div><button className={style['about__cards_btn']} onClick={handleSubmit}>{t('about-button-2')}</button></div>*/}
+            <Link
+              href='https://www.linkedin.com/in/egorkalambert/'
+              target='_blank'
+              aria-label='Linkedin link'>
+              <button className={style['about__cards_btn']}> {t('about-button-4')}</button>
+            </Link>
+            </div> 
           </span>
         </div>
 
@@ -157,7 +162,7 @@ export default function About() {
             </div>
           </span>
           <span className={style['about__cards_img']}>
-            <Image alt='meeting image' src={Coffee} style={imageStyle} />
+            <Image alt='meeting image' src={Coffee} className='about__cards_image'/>
           </span>
         </div>
       </div>
