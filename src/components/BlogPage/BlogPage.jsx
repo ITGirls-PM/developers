@@ -16,30 +16,23 @@ const paginate = (items, pageNumber, pageSize) => {
 
 export default function BlogPage() {
   const { i18n } = useTranslation();
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
     if (i18n.language === 'ru') {
-      items = blogData;
+      setItems(blogData);
     } else {
-      items = blogDataEn;
+      setItems(blogDataEn);
     }
   }, []);
 
   useEffect(() => {
     if (i18n.language === 'ru') {
-      items = blogData;
+      setItems(blogData);
     } else {
-      items = blogDataEn;
+      setItems(blogDataEn);
     }
   }, [i18n.language]);
-
-  let items;
-  if (i18n.language === 'ru') {
-    items = blogData;
-  } else {
-    items = blogDataEn;
-  }
-
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 3;
   const handlePageChange = (page) => {
@@ -53,7 +46,7 @@ export default function BlogPage() {
 
   useEffect(() => {
     setPaginatedPosts(paginate(items, currentPage, pageSize));
-  }, [currentPage, i18n.language]);
+  }, [currentPage, i18n.language, items]);
 
   return (
     <>
