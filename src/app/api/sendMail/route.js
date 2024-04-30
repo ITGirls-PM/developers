@@ -6,19 +6,19 @@ export async function POST(request) {
         const { name, email, message } = await request.json();
 
         const transporter = nodemailer.createTransport({
-            service: 'yandex',
-            host: 'smtp.yandex.ru',
+            service: 'yandex или другой сервис',
+            host: 'например, smtp.yandex.ru или другой хост',
             port: 465,
             secure: true,
             auth: {
-                user: 'dariastore@yandex.ru',
+                user: 'здесь написать email, откуда шлются письма',
                 pass: process.env.EMAIL_HOST_PASSWORD
             }
         })
 
         const mailOption = {
-            from: 'dariastore@yandex.ru',
-            to: 'ignateva-darya@mail.ru',
+            from: 'email, откуда шлем письма',
+            to: 'email, куда шлем письма',
             subject: "Заявка",
             html: `
         <h3>Привет, новая заявка!</h3>
