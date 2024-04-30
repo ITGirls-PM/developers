@@ -86,6 +86,9 @@ export default function MainList() {
             <li className={style['mainblock__item']}>{t('main-li-6')}</li>
           </ul>
           <div className={style['mainblock__sub']}>
+            <h2 className={style['mainblock__title_email']}>
+              {t('main-title-2')}
+            </h2>
             <textarea
               type='text'
               name='email'
