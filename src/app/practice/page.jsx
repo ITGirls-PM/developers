@@ -19,13 +19,6 @@ export default function Practice() {
     } else {
       setData(practiceDataEn);
     }
-  }, []);
-  useEffect(() => {
-    if (i18n.language === 'ru') {
-      setData(practiceData);
-    } else {
-      setData(practiceDataEn);
-    }
   }, [i18n.language]);
 
   return (

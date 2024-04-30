@@ -24,14 +24,6 @@ export default function BlogPage() {
     } else {
       setItems(blogDataEn);
     }
-  }, []);
-
-  useEffect(() => {
-    if (i18n.language === 'ru') {
-      setItems(blogData);
-    } else {
-      setItems(blogDataEn);
-    }
   }, [i18n.language]);
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 3;
