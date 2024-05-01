@@ -10,7 +10,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 3.5vw;
+    margin-bottom: 20px;
   }
 
   &__box {
@@ -74,18 +74,56 @@
       margin-inline-start: 0;
     }
   }
+
+  &__sub {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0 25px 5px;
+    flex-wrap: wrap;
+  }
+
+  &__email {
+    border: none;
+    border-bottom: 1px #a5a5a5 solid;
+    padding-bottom: 10px;
+    width: 298px;
+    resize: none;
+    @extend %text-font;
+    &:active,
+    &:hover,
+    &:focus {
+      outline: 0;
+      outline-offset: 0;
+    }
+  }
+
+  &__btn {
+    @extend %button-font;
+    background-color: #41b619;
+    border: none;
+    height: 45px;
+    padding: 0 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: #262626;
+    }
+  }
 }
 
 .circle {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 
   @media screen and (max-width: 756px) {
     justify-content: center;
   }
 
   @media (min-width: 756px) and (max-width: 960px) {
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   &__image {
@@ -98,7 +136,7 @@
 .wrapper {
   width: 50%;
   margin-inline-end: 22px;
-  padding: 0 83px;
+  padding: 0 40px;
 
   @media screen and (max-width: 756px) {
     width: 70%;

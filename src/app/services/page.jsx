@@ -23,6 +23,7 @@ export default function Services() {
   const [emailError, setEmailError] = useState('');
   const [isChecked, setIsChecked] = useState(false);
   const [consentError, setConsentError] = useState('');
+  const [data, setData] = useState([]);
   const [activeArticles, setActiveArticles] = useState([
     false,
     false,
@@ -93,28 +94,19 @@ export default function Services() {
     }
   };
 
-  let data;
   useEffect(() => {
     if (i18n.language === 'ru') {
-      data = serviceData;
+      setData(serviceData);
     } else {
-      data = serviceDataEn;
-    }
-  }, []);
-
-  useEffect(() => {
-    if (i18n.language === 'ru') {
-      data = serviceData;
-    } else {
-      data = serviceDataEn;
+      setData(serviceDataEn);
     }
   }, [i18n.language]);
 
-  if (i18n.language === 'ru') {
-    data = serviceData;
-  } else {
-    data = serviceDataEn;
-  }
+  // if (i18n.language === 'ru') {
+  //   data = serviceData;
+  // } else {
+  //   data = serviceDataEn;
+  // }
 
   const handleChange = (id) => {
     let newArray = [...activeArticles];
